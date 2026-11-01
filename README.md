@@ -262,3 +262,7 @@ stats = get_flag_statistics(df)
 - **Phase B**: FastAPI + Streamlit 검수 현황 대시보드
 - **Phase C**: 멀티 LLM 교차 검증 (Claude/GPT/gemini API) + 자동 리포트
 - **Phase D**: Airflow 스케줄링 기반 정기 실행 자동화
+
+## Grammar Graph (content DataOps, prototype 1)
+
+`grammar_graph/` holds an English-grammar prerequisite graph (YAML DAG) with schema, cycle, reachability and item-tag checks run by the `graph-validate` workflow. See [grammar_graph/README.md](grammar_graph/README.md) and the generated [roadmap](grammar_graph/docs/roadmap.md).

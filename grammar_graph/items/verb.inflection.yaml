@@ -1,0 +1,20 @@
+# SAMPLE items to exercise the validator. Replace with your own.
+# Rule: no items copied or adapted from employers or commercial textbooks.
+items:
+  - id: verb.inflection.001
+    node: verb.inflection
+    type: blank
+    stem: "She ____ (go) to school by bus every day."
+    answer: "goes"
+    explanation: "3인칭 단수 현재: -o로 끝나면 -es"
+    source: self
+    review: {status: approved, by: kky, date: "2026-11-01"}
+
+  - id: verb.inflection.002
+    node: verb.inflection
+    type: blank
+    stem: "Yesterday he ____ (buy) a new phone."
+    answer: "bought"
+    explanation: "불규칙 과거형 buy-bought-bought"
+    source: synthetic
+    review: {status: pending}
