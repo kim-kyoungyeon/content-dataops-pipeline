@@ -64,8 +64,8 @@ jobs:
       
       - name: Build Docker image
         run: |
-          docker build -t qa-data-pipeline:${{ github.sha }} .
+          docker build -t content-dataops-pipeline:${{ github.sha }} .
       
       - name: Test Docker image
         run: |
-          docker run --rm qa-data-pipeline:${{ github.sha }} --help
+          docker run --rm content-dataops-pipeline:${{ github.sha }} --help

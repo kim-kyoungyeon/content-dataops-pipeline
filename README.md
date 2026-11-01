@@ -1,5 +1,5 @@
-# QA Data Pipeline
-
+# Content DataOps Pipeline
+Automated QA validation pipeline for large-scale regulatory data, plus a grammar-graph content pipeline (`grammar_graph/`).
 Automated QA validation pipeline for large-scale regulatory data processing.
 
 > **Problem**: 228개 지자체 × 50개 항목(11,000+ rows)의 조례 데이터를 
@@ -82,8 +82,8 @@ graph LR
 ## Installation
 
 ```bash
-git clone https://github.com/kim-kyoungyeon/qa-data-pipeline.git
-cd qa-data-pipeline
+git clone https://github.com/kim-kyoungyeon/content-dataops-pipeline.git
+cd content-dataops-pipeline
 pip install -r requirements.txt
 ```
 
@@ -144,7 +144,7 @@ Output Files
 ## Project Structure
 
 ```
-qa-data-pipeline/
+content-dataops-pipeline/
 ├── src/
 │   ├── __init__.py
 │   ├── config.py           # YAML config loader
