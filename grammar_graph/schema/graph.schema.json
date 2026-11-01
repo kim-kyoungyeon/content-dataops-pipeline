@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Grammar prerequisite graph",
+  "type": "object",
+  "required": ["version", "nodes", "edges"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {"type": "integer", "minimum": 1},
+    "nodes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "branch", "weight"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z]+\\.[a-z_]+$"},
+          "label": {"type": "string", "minLength": 1},
+          "branch": {"type": "string"},
+          "weight": {"enum": ["high", "mid", "low"]},
+          "milestone": {"enum": ["proto1", "proto2"]},
+          "kind": {"enum": ["concept", "tag"], "default": "concept"}
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["from", "to"],
+        "additionalProperties": false,
+        "properties": {
+          "from": {"type": "string"},
+          "to": {"type": "string"},
+          "type": {"enum": ["prereq", "related", "tag"], "default": "prereq"},
+          "note": {"type": "string"}
+        }
+      }
+    }
+  }
+}

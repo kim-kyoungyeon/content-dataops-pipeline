@@ -1,0 +1,128 @@
+# English grammar prerequisite graph
+# edge.type:
+#   prereq  - must be learned first. Cycle check applies to this type only.
+#   related - reference link (e.g. dummy "it" -> to-infinitive). Not a prerequisite.
+#   tag     - attaches a tag node. Not a prerequisite.
+# milestone: proto1 = content is built in prototype 1. Others are skeleton only.
+
+version: 1
+
+nodes:
+  - {id: base.terms,            label: "용어 해석",                          branch: base,     weight: high}
+
+  - {id: noun.number,           label: "명사, 단수와 복수",                  branch: noun,     weight: mid}
+  - {id: noun.determiner,       label: "한정사: 관사, some/any, no, each, every", branch: noun, weight: mid}
+  - {id: noun.pronoun_it,       label: "대명사 it",                          branch: noun,     weight: mid}
+
+  - {id: skeleton.svoc,         label: "문장 뼈대 기초: S/V/O/C 자리와 품사", branch: skeleton, weight: mid}
+
+  - {id: verb.inflection,       label: "동사1 3단 변화 게이트",              branch: verb,     weight: high, milestone: proto1}
+  - {id: verb.tense,            label: "동사2 시제",                         branch: verb,     weight: high, milestone: proto1}
+  - {id: verb.modal,            label: "동사3 조동사",                       branch: verb,     weight: high}
+  - {id: verb.transitivity,     label: "동사4 자동사 / 타동사",              branch: verb,     weight: high, milestone: proto1}
+  - {id: verb.type,             label: "동사5 종류 분류",                    branch: verb,     weight: high}
+  - {id: verb.no_passive,       label: "동사6 수동태 불가 동사",             branch: verb,     weight: high}
+  - {id: verb.passive_prep,     label: "동사7 수동태 뒤 to/for/with",        branch: verb,     weight: high}
+  - {id: verb.pattern,          label: "동사8 몇 형식 추적",                 branch: verb,     weight: high}
+  - {id: verb.phrasal,          label: "동사9 구동사",                       branch: verb,     weight: high}
+
+  - {id: adv.scope,             label: "부사1 위치와 범위",                  branch: adverb,   weight: mid}
+  - {id: adv.drill,             label: "부사2 문제 풀이 (형용사 수식 제외)", branch: adverb,   weight: mid}
+  - {id: adv.confusable,        label: "부사3 헷갈리는 형용사와 부사, 형용사 수식", branch: adverb, weight: mid}
+  - {id: adv.special,           label: "부사4 특수 부사구: 시간, 조건",      branch: adverb,   weight: mid}
+  - {id: adv.freq_neg,          label: "부사5 빈도, 부정 부사",              branch: adverb,   weight: mid}
+
+  - {id: adj.complement,        label: "형용사1 C 자리",                     branch: adjective, weight: mid}
+  - {id: adj.position,          label: "형용사2 앞 짧은, 뒤 긴",             branch: adjective, weight: mid}
+  - {id: adj.exception,         label: "형용사3 예외 암기",                  branch: adjective, weight: mid}
+  - {id: adj.idiom,             label: "형용사4 관용어",                     branch: adjective, weight: mid}
+
+  - {id: verbal.to_inf,         label: "준동사1 to부정사",                   branch: verbal,   weight: high}
+  - {id: verbal.participle,     label: "준동사2 분사, 분사구문",             branch: verbal,   weight: high}
+  - {id: verbal.gerund,         label: "준동사3 동명사",                     branch: verbal,   weight: high}
+
+  - {id: trim.modifier,         label: "수식어구 쳐내기",                    branch: trim,     weight: high}
+
+  - {id: conj.role,             label: "접속사1 역할",                       branch: conj,     weight: high}
+  - {id: conj.noun_concessive,  label: "접속사2 명사절, 양보절",             branch: conj,     weight: high}
+  - {id: conj.that_noun,        label: "접속사3 that 동격, 명사절 판별",     branch: conj,     weight: high}
+  - {id: conj.correlative,      label: "상관접속사, 병렬구조",               branch: conj,     weight: low}
+
+  - {id: rel.basic,             label: "관계대명사, 관계부사",               branch: rel,      weight: high}
+  - {id: rel.that_exception,    label: "that 관계사절 판별과 예외",          branch: rel,      weight: high}
+
+  - {id: comp.basic,            label: "비교",                               branch: comp,     weight: low}
+  - {id: hyp.basic,             label: "가정법",                             branch: hyp,      weight: low}
+  - {id: prep.special,          label: "전치사 특강",                        branch: prep,     weight: low}
+
+  - {id: solve.stage,           label: "문제 풀이 단계",                     branch: solve,    weight: high}
+  - {id: tag.special,           label: "특수구문 태그: 도치, 강조, 부정",    branch: tag,      weight: low, kind: tag}
+
+edges:
+  # noun / skeleton
+  - {from: base.terms,           to: noun.number}
+  - {from: noun.number,          to: noun.determiner}
+  - {from: noun.number,          to: noun.pronoun_it}
+  - {from: noun.pronoun_it,      to: verbal.to_inf,        type: related, note: "가주어 it"}
+  - {from: base.terms,           to: skeleton.svoc}
+  - {from: noun.determiner,      to: skeleton.svoc}
+
+  # verb
+  - {from: base.terms,           to: verb.inflection}
+  - {from: verb.inflection,      to: verb.tense}
+  - {from: verb.tense,           to: verb.modal}
+  - {from: verb.tense,           to: verb.transitivity}
+  - {from: verb.transitivity,    to: verb.type}
+  - {from: skeleton.svoc,        to: verb.type}
+  - {from: verb.type,            to: verb.no_passive}
+  - {from: verb.no_passive,      to: verb.passive_prep}
+  - {from: verb.passive_prep,    to: verb.pattern}
+  - {from: verb.pattern,         to: verb.phrasal}
+
+  # adverb / adjective
+  - {from: verb.pattern,         to: adv.scope}
+  - {from: adv.scope,            to: adv.drill}
+  - {from: adv.drill,            to: adj.complement}
+  - {from: skeleton.svoc,        to: adj.complement}
+  - {from: adj.complement,       to: adj.position}
+  - {from: adj.position,         to: adj.exception}
+  - {from: adj.exception,        to: adj.idiom}
+  - {from: adj.position,         to: adv.confusable}
+  - {from: adv.confusable,       to: adv.special}
+  - {from: adv.special,          to: adv.freq_neg}
+
+  # verbal
+  - {from: verb.tense,           to: verbal.to_inf}
+  - {from: verb.transitivity,    to: verbal.to_inf}
+  - {from: adj.idiom,            to: verbal.to_inf}
+  - {from: verbal.to_inf,        to: verbal.participle}
+  - {from: verb.passive_prep,    to: verbal.participle}
+  - {from: verb.tense,           to: verbal.participle}
+  - {from: verbal.to_inf,        to: verbal.gerund}
+
+  # trim / conj / rel
+  - {from: verbal.participle,    to: trim.modifier}
+  - {from: verbal.gerund,        to: trim.modifier}
+  - {from: skeleton.svoc,        to: trim.modifier}
+  - {from: trim.modifier,        to: conj.role}
+  - {from: conj.role,            to: conj.noun_concessive}
+  - {from: conj.noun_concessive, to: conj.that_noun}
+  - {from: conj.that_noun,       to: rel.basic}
+  - {from: rel.basic,            to: rel.that_exception}
+  - {from: conj.that_noun,       to: conj.correlative}
+
+  # comp / hyp / prep
+  - {from: adj.position,         to: comp.basic}
+  - {from: adv.drill,            to: comp.basic}
+  - {from: verb.tense,           to: hyp.basic}
+  - {from: verb.modal,           to: hyp.basic}
+  - {from: conj.role,            to: hyp.basic}
+  - {from: trim.modifier,        to: prep.special}
+
+  # solve
+  - {from: prep.special,         to: solve.stage}
+  - {from: rel.that_exception,   to: solve.stage}
+  - {from: conj.correlative,     to: solve.stage}
+  - {from: comp.basic,           to: solve.stage}
+  - {from: hyp.basic,            to: solve.stage}
+  - {from: solve.stage,          to: tag.special,          type: tag}
