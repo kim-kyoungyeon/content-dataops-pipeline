@@ -40,7 +40,7 @@ clean:
 
 # Docker
 docker-build:
-	docker build -t qa-data-pipeline:latest .
+	docker build -t content-dataops-pipeline:latest .
 
 docker-run:
 	docker-compose up qa-pipeline
