@@ -1,4 +1,6 @@
-# content-dataops-pipeline
+# Grammar Graph
+
+[← 레포 루트 README](../README.md)
 
 영어 문법 선수학습 그래프(DAG)를 YAML로 정의하고, GitHub Actions로 스키마·순환·도달성·문항 태그 정합성을 자동 검증하는 콘텐츠 데이터 파이프라인.
 
@@ -38,8 +40,10 @@ docs/roadmap.md           # 자동 생성, 직접 수정 금지 (CI가 최신 �
 ## 실행
 
 ```
+cd grammar_graph
 pip install -r requirements.txt
-cd grammar_graph && python tools/validate.py --mermaid   # 검증 + 로드맵 재생성
+python tools/validate.py --mermaid   # 검증 + 로드맵 재생성
+python tools/validate.py --check     # CI와 같은 검사
 pytest -q
 ```
 
