@@ -44,6 +44,7 @@ cd grammar_graph
 pip install -r requirements.txt
 python tools/validate.py --mermaid   # 검증 + 로드맵 재생성
 python tools/validate.py --check     # CI와 같은 검사
+python tools/check_adr.py           # ADR, 가설 문서 형식 검사 (docs/decisions, docs/design-principles.md)
 pytest -q
 ```
 
