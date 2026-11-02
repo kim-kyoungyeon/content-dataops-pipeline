@@ -24,5 +24,7 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Structural validation (schema, cycle, reachability, item tags, roadmap freshness)
         run: python tools/validate.py --check
+      - name: ADR format (file name, numbering, status, sections, superseded target)
+        run: python tools/check_adr.py
       - name: Tests
         run: pytest -q
