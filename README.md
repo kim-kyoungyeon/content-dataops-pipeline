@@ -1,5 +1,23 @@
 # Content DataOps Pipeline
-Automated QA validation pipeline for large-scale regulatory data, plus a grammar-graph content pipeline (`grammar_graph/`).
+
+콘텐츠 데이터의 품질을 **자동 검증 + 사람 검수**로 보장하는 파이프라인 모음. 두 개의 모듈이 같은 원칙을 서로 다른 데이터에 적용한다.
+
+| 모듈 | 데이터 | 하는 일 | 상태 |
+|---|---|---|---|
+| [QA Flag Pipeline](#qa-flag-pipeline) (`src/`, `main.py`) | 남이 만든 대량 데이터 (조례 11,000+ rows) | 신뢰도 점수 기반 플래그로 고위험 행을 골라 사람이 먼저 검수 | 동작 중, pytest 54개 |
+| [Grammar Graph](grammar_graph/README.md) (`grammar_graph/`) | 직접 만든 영어 학습 콘텐츠 | 문법 선수학습 그래프(YAML DAG)와 문항을 CI로 검증하고 로드맵 자동 생성 | 프로토타입 1 (그래프, 검증기, CI 완료 / 문항은 샘플 2개, 검수 진행 중) |
+
+**공통 원칙**
+- 기계가 확인할 수 있는 것은 CI로 자동 검증한다 (스키마, 순환, 정합성, 테스트).
+- 내용이 맞는지는 사람이 검수하고, 검수 기록을 남긴다 (human-in-the-loop).
+- LLM이 만든 데이터는 승인 전에는 쓰지 않는다.
+
+**CI**: `CI` (QA 모듈: flake8, pytest, Docker 빌드) / `graph-validate` (그래프 모듈: 스키마, 순환, 도달성, 문항 태그, 로드맵 최신 여부)
+
+---
+
+# QA Flag Pipeline
+
 Automated QA validation pipeline for large-scale regulatory data processing.
 
 > **Problem**: 228개 지자체 × 50개 항목(11,000+ rows)의 조례 데이터를 
@@ -257,12 +275,8 @@ stats = get_flag_statistics(df)
 | Container | Docker |
 | CI/CD | GitHub Actions |
 
-## Roadmap
+## Roadmap (QA Flag Pipeline)
 
 - **Phase B**: FastAPI + Streamlit 검수 현황 대시보드
 - **Phase C**: 멀티 LLM 교차 검증 (Claude/GPT/gemini API) + 자동 리포트
 - **Phase D**: Airflow 스케줄링 기반 정기 실행 자동화
-
-## Grammar Graph (content DataOps, prototype 1)
-
-`grammar_graph/` holds an English-grammar prerequisite graph (YAML DAG) with schema, cycle, reachability and item-tag checks run by the `graph-validate` workflow. See [grammar_graph/README.md](grammar_graph/README.md) and the generated [roadmap](grammar_graph/docs/roadmap.md).
