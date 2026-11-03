@@ -1,0 +1,184 @@
+# 고등 영어 문법 커버리지 (작업 기준)
+# - 공식 교육과정의 학년별 매핑이 아니라, 프로젝트에서 정리한 작업 기준이다.
+# - 이 표에 없는 학년·항목은 '명시되지 않음'이지 '제외'가 아니다.
+# - 실제 문항 대상은 교과서 단원 목표와 원문 문장 구조가 정한다(이 표는 참고).
+# - coverage_level: core(핵심) | advanced(심화) | csat(수능 어법) | error_review(빈출 오류 점검) | integrated(통합 활용)
+# - subtopic은 아직 세분화하지 않았다. 세분화는 근거가 확인되면 채운다.
+# 학년별 목표: 고1 핵심 문법 범위 구축 / 고2 수능 어법으로 확장 / 고3 새 단원보다 빈출 오류와 통합 문항으로 정리.
+# 자료 수준 매핑(참고): Level 2=고1, Level 3=고1~고2, Level 4~5=고2~고3 (자료 난이도 분류이며 문법 주제 범위가 아님).
+coverage:
+- grade: 고1
+  grammar_category: 준동사(부정사·동명사)
+  coverage_level: core
+  question_target: 능동·수동 형태
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고2
+  grammar_category: 준동사(부정사·동명사)
+  coverage_level: advanced
+  question_target: 심화 용법
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고3
+  grammar_category: 준동사(부정사·동명사)
+  coverage_level: error_review
+  question_target: 빈출 오류
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고1
+  grammar_category: 분사
+  coverage_level: core
+  question_target: 분사, 분사구문
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고2
+  grammar_category: 분사
+  coverage_level: advanced
+  question_target: 심화 구문
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고3
+  grammar_category: 분사
+  coverage_level: error_review
+  question_target: 오류 판별
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고1
+  grammar_category: 관계사
+  coverage_level: core
+  question_target: 관계대명사·관계부사
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고2
+  grammar_category: 관계사
+  coverage_level: advanced
+  question_target: 복합 구조
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고3
+  grammar_category: 관계사
+  coverage_level: integrated
+  question_target: 통합 활용
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고1
+  grammar_category: 접속사
+  coverage_level: core
+  question_target: 접속사와 관계사의 구분
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고2
+  grammar_category: 접속사
+  coverage_level: advanced
+  question_target: 심화 구분
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고3
+  grammar_category: 접속사
+  coverage_level: error_review
+  question_target: 문맥상 오류
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고1
+  grammar_category: 시제·완료
+  coverage_level: core
+  question_target: 완료 시제
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고2
+  grammar_category: 시제·완료
+  coverage_level: csat
+  question_target: 수능형 적용
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고3
+  grammar_category: 시제·완료
+  coverage_level: error_review
+  question_target: 오류 점검
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고1
+  grammar_category: 수동태
+  coverage_level: core
+  question_target: 기본·심화 수동태
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고2
+  grammar_category: 수동태
+  coverage_level: advanced
+  question_target: 결합 구조
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고3
+  grammar_category: 수동태
+  coverage_level: error_review
+  question_target: 오류 점검
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고1
+  grammar_category: 부사절
+  coverage_level: advanced
+  question_target: 심화 부사절
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고2
+  grammar_category: 부사절
+  coverage_level: advanced
+  question_target: 복합 부사절
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고3
+  grammar_category: 부사절
+  coverage_level: integrated
+  question_target: 통합 활용
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고2
+  grammar_category: 병렬구조
+  coverage_level: core
+  question_target: 핵심 범위
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고3
+  grammar_category: 병렬구조
+  coverage_level: error_review
+  question_target: 오류 점검
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고2
+  grammar_category: 조동사
+  coverage_level: advanced
+  question_target: 심화 범위
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고3
+  grammar_category: 조동사
+  coverage_level: error_review
+  question_target: 오류 점검
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고2
+  grammar_category: 간접화법
+  coverage_level: core
+  question_target: 핵심 범위
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고3
+  grammar_category: 간접화법
+  coverage_level: error_review
+  question_target: 오류 점검
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고2
+  grammar_category: 가정법
+  coverage_level: advanced
+  question_target: 심화 범위
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고3
+  grammar_category: 가정법
+  coverage_level: error_review
+  question_target: 오류 점검
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고2
+  grammar_category: 수일치
+  coverage_level: csat
+  question_target: 수능 어법
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고3
+  grammar_category: 수일치
+  coverage_level: error_review
+  question_target: 오류 점검
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고2
+  grammar_category: 도치
+  coverage_level: advanced
+  question_target: 심화 구조
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고3
+  grammar_category: 도치
+  coverage_level: error_review
+  question_target: 오류 점검
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고2
+  grammar_category: 강조·특수구문
+  coverage_level: advanced
+  question_target: 심화 구조
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님
+- grade: 고3
+  grammar_category: 강조·특수구문
+  coverage_level: error_review
+  question_target: 오류 점검
+  source_evidence: 작업 논의 정리(2026-03-16), 공식 교육과정 아님

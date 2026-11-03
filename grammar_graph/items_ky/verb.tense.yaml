@@ -1,0 +1,193 @@
+# 경연 스타일 해설 버전 (items/ 원본은 그대로). 이 폴더는 validate.py가 검사하지 않는다.
+# 문항 id는 items/ 원본과 같고, explanation만 다르다. 검수 완료: kky, 2026-11-04
+items:
+
+- id: verb.tense.001
+  node: verb.tense
+  type: choice
+  stem: By the time she retires next year, she ____ for the company for 30 years.
+  choices:
+  - works
+  - has worked
+  - will have worked
+  - had worked
+  answer: will have worked
+  explanation: by + 미래 시점이면 will have p.p.(미래완료), 30년 동안 계속
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.tense.002
+  node: verb.tense
+  type: choice
+  stem: The museum ____ since it was damaged by the fire in 2019.
+  choices:
+  - closes
+  - has been closed
+  - was closed
+  - had closed
+  answer: has been closed
+  explanation: since절의 과거에서 현재까지 이어지는 현재완료 수동태
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.tense.003
+  node: verb.tense
+  type: choice
+  stem: I ____ him for ten minutes before he finally showed up.
+  choices:
+  - waited
+  - have waited
+  - had been waiting
+  - will wait
+  answer: had been waiting
+  explanation: 과거 시점 전부터 계속 기다림은 had been -ing(과거완료진행)
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.tense.004
+  node: verb.tense
+  type: choice
+  stem: No sooner ____ the door than the phone rang.
+  choices:
+  - had she opened
+  - she had opened
+  - did she open
+  - she opened
+  answer: had she opened
+  explanation: No sooner가 문두에 오면 [had + 주어 + p.p.](과거완료 도치)가 온다
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.tense.005
+  node: verb.tense
+  type: choice
+  stem: If he ____ harder, he would have passed the exam.
+  choices:
+  - studied
+  - had studied
+  - has studied
+  - would study
+  answer: had studied
+  explanation: 가정법 과거완료는 if + had p.p.(과거완료), 주절 would(조동사 과거) + have p.p.
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.tense.006
+  node: verb.tense
+  type: choice
+  stem: The bridge ____ in 2025 and is now open to the public.
+  choices:
+  - is completed
+  - was completed
+  - has completed
+  - had completed
+  answer: was completed
+  explanation: 완공되는 것이므로 수동태, 과거 시점(종료)
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.tense.007
+  node: verb.tense
+  type: choice
+  stem: Look at those clouds. It ____ rain soon.
+  choices:
+  - will
+  - is going to
+  - is raining
+  - rained
+  answer: is going to
+  explanation: be going to는 예정된 미래 / 눈앞의 근거로 하는 예측, will은 즉흥적인 결정 / 막연한 추측·의지
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.tense.008
+  node: verb.tense
+  type: choice
+  stem: She said that she ____ the book already.
+  choices:
+  - reads
+  - has read
+  - had read
+  - will read
+  answer: had read
+  explanation: said(과거)보다 앞서 완료된 일은 과거완료(시제 일치)
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.tense.009
+  node: verb.tense
+  type: choice
+  stem: I will call you as soon as I ____ home.
+  choices:
+  - will get
+  - get
+  - got
+  - am getting
+  answer: get
+  explanation: 시간 부사절(as soon as, when)에서는 미래 대신 현재형
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.tense.010
+  node: verb.tense
+  type: blank
+  stem: Since the project began, the team ____ (make) steady progress.
+  answer: has made
+  explanation: since가 이끄는 과거에서 현재까지는 현재완료(계속적 용법)
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.tense.011
+  node: verb.tense
+  type: blank
+  stem: The documents ____ (review) by the manager when I arrived.
+  answer: were being reviewed
+  explanation: 과거 진행 + 수동은 were being + p.p.
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.tense.012
+  node: verb.tense
+  type: blank
+  stem: The earth ____ (move) around the sun, as the teacher explained.
+  answer: moves
+  explanation: 불변의 진리는 주절이 과거여도 현재형(moves)
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.tense.013
+  node: verb.tense
+  type: blank
+  stem: By 2030, scientists ____ (develop) a new vaccine.
+  answer: will have developed
+  explanation: 미래 시점까지의 완료 능동태는 will have p.p.
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.tense.014
+  node: verb.tense
+  type: choice
+  stem: The number of cars in the city ____ increased.
+  choices:
+  - have
+  - has
+  - are
+  - were
+  answer: has
+  explanation: the number of는 단수 취급, a number of 는 복수 취급.
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.tense.015
+  node: verb.tense
+  type: choice
+  stem: She wishes she ____ more time yesterday.
+  choices:
+  - has
+  - had
+  - had had
+  - would have
+  answer: had had
+  explanation: '과거사실의 반대 (해석: 어제 시간이 없었다)'
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}

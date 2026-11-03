@@ -1,0 +1,201 @@
+# 경연 스타일 해설 버전 (items/ 원본은 그대로). 이 폴더는 validate.py가 검사하지 않는다.
+# 문항 id는 items/ 원본과 같고, explanation만 다르다. 검수 완료: kky, 2026-11-04
+items:
+
+- id: verb.transitivity.001
+  node: verb.transitivity
+  type: choice
+  stem: The committee discussed ____ the issue.
+  choices:
+  - about
+  - 'on'
+  - of
+  - 전치사 필요 없음
+  answer: 전치사 필요 없음
+  explanation: discuss(3V)는 완전타동사, about 없이 바로 목적어
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.transitivity.002
+  node: verb.transitivity
+  type: choice
+  stem: She married ____ a doctor.
+  choices:
+  - with
+  - to
+  - of
+  - 전치사 필요 없음
+  answer: 전치사 필요 없음
+  explanation: marry(3V)는 완전타동사, 전치사 없이 바로 목적어
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.transitivity.003
+  node: verb.transitivity
+  type: choice
+  stem: They arrived ____ the airport at six.
+  choices:
+  - at
+  - 전치사 필요 없음
+  - to
+  - of
+  answer: at
+  explanation: arrive(1V)는 완전자동사라 장소 앞에 at/in이 필요
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.transitivity.004
+  node: verb.transitivity
+  type: choice
+  stem: The price of oil has ____ sharply this year.
+  choices:
+  - risen
+  - raised
+  answer: risen
+  explanation: rise(1V)는 완전자동사, raise(3V)는 완전타동사
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.transitivity.005
+  node: verb.transitivity
+  type: choice
+  stem: The government ____ taxes last year.
+  choices:
+  - rose
+  - raised
+  - risen
+  - arose
+  answer: raised
+  explanation: 목적어(taxes)가 있으므로 완전타동사 raise(3V)
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.transitivity.006
+  node: verb.transitivity
+  type: choice
+  stem: He ____ me the truth.
+  choices:
+  - said
+  - told
+  - spoke
+  - talked
+  answer: told
+  explanation: tell은 목적어 두 개를 받는 수여동사(4V), say·speak·talk은 불가
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.transitivity.007
+  node: verb.transitivity
+  type: choice
+  stem: The soup ____ delicious.
+  choices:
+  - tastes
+  - tastes well
+  - is tasting
+  - tastes of
+  answer: tastes
+  explanation: taste(2V)는 감각동사, 뒤에 형용사 보어(부사 well 불가)
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.transitivity.008
+  node: verb.transitivity
+  type: choice
+  stem: 다음 중 수동태로 바꿀 수 없는 문장은?
+  choices:
+  - He loves her.
+  - She resembles her mother.
+  - They built a house.
+  - He opened the door.
+  answer: She resembles her mother.
+  explanation: resemble(3V)는 상태를 나타내는 완전타동사라 수동태가 안 된다
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.transitivity.009
+  node: verb.transitivity
+  type: choice
+  stem: 다음 중 수동태로 바꿀 수 없는 문장은?
+  choices:
+  - The accident happened last night.
+  - He broke the vase.
+  - She wrote a letter.
+  - They invited me.
+  answer: The accident happened last night.
+  explanation: happen(1V)는 완전자동사라 수동태 불가
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.transitivity.010
+  node: verb.transitivity
+  type: choice
+  stem: The patient ____ last night.
+  choices:
+  - died
+  - was died
+  - has been died
+  - is died
+  answer: died
+  explanation: die(1V)는 완전자동사, 수동태 불가
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.transitivity.011
+  node: verb.transitivity
+  type: choice
+  stem: The meeting lasted two hours. (lasted) (밑줄 친 동사는 자동사인가 타동사인가?)
+  choices:
+  - 자동사
+  - 타동사
+  answer: 자동사
+  explanation: last(1V)는 완전자동사, two hours는 부사어(기간)
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.transitivity.012
+  node: verb.transitivity
+  type: choice
+  stem: She grows tomatoes in her garden. (grows) (밑줄 친 동사는 자동사인가 타동사인가?)
+  choices:
+  - 자동사
+  - 타동사
+  answer: 타동사
+  explanation: '''기르다''의 grow(3V)는 목적어(tomatoes)를 받는 완전타동사'
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.transitivity.013
+  node: verb.transitivity
+  type: choice
+  stem: The tomatoes grow fast in summer. (grow) (밑줄 친 동사는 자동사인가 타동사인가?)
+  choices:
+  - 자동사
+  - 타동사
+  answer: 자동사
+  explanation: '''자라다''의 grow(1V)는 완전자동사'
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.transitivity.014
+  node: verb.transitivity
+  type: choice
+  stem: He runs a small restaurant. (runs) (밑줄 친 동사는 자동사인가 타동사인가?)
+  choices:
+  - 자동사
+  - 타동사
+  answer: 타동사
+  explanation: '''운영하다''의 run(3V)는 완전타동사'
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.transitivity.015
+  node: verb.transitivity
+  type: choice
+  stem: The river runs through the city. (runs) (밑줄 친 동사는 자동사인가 타동사인가?)
+  choices:
+  - 자동사
+  - 타동사
+  answer: 자동사
+  explanation: '''흐르다''의 run(1V)은 완전자동사'
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}

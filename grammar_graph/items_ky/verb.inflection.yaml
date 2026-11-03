@@ -1,0 +1,138 @@
+# 경연 스타일 해설 버전 (items/ 원본은 그대로). 이 폴더는 validate.py가 검사하지 않는다.
+# 문항 id는 items/ 원본과 같고, explanation만 다르다. 검수 완료: kky, 2026-11-04
+items:
+
+- id: verb.inflection.001
+  node: verb.inflection
+  type: blank
+  stem: She ____ (go) to school by bus every day.
+  answer: goes
+  explanation: '3인칭 단수 현재: -o로 끝나면 -es'
+  source: self
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.inflection.002
+  node: verb.inflection
+  type: blank
+  stem: He has ____ (undergo) a major surgery.
+  answer: undergone
+  explanation: undergo-underwent-undergone, 현재완료는 has + 과거분사
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.inflection.003
+  node: verb.inflection
+  type: blank
+  stem: The prices have ____ (rise) sharply this year.
+  answer: risen
+  explanation: rise(1V)-rose-risen, have + 과거분사. raise(3V)와 구분
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.inflection.004
+  node: verb.inflection
+  type: blank
+  stem: She ____ (withdraw) all her savings last week.
+  answer: withdrew
+  explanation: withdraw-withdrew-withdrawn, last week이라 과거형
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.inflection.005
+  node: verb.inflection
+  type: blank
+  stem: The shirt has ____ (shrink) after washing.
+  answer: shrunk
+  explanation: shrink-shrank-shrunk, has + 과거분사(shrunk)
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.inflection.006
+  node: verb.inflection
+  type: blank
+  stem: She ____ (lie) on the sofa all afternoon yesterday.
+  answer: lay
+  explanation: lie(1V 눕다)-lay-lain, yesterday라 과거 lay. lay(3V 놓다)와 구분
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.inflection.007
+  node: verb.inflection
+  type: blank
+  stem: He ____ (lay) the baby on the bed a minute ago.
+  answer: laid
+  explanation: lay(3V 놓다)-laid-laid, 목적어(the baby)가 있으면 lay, ago라 과거 laid
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.inflection.008
+  node: verb.inflection
+  type: blank
+  stem: The government has ____ (raise) taxes again.
+  answer: raised
+  explanation: raise(3V)-raised-raised, 목적어(taxes)가 있으니 타동사, has + 과거분사
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.inflection.009
+  node: verb.inflection
+  type: blank
+  stem: The clothes were ____ (hang) on the line to dry.
+  answer: hung
+  explanation: 물건을 걸다는 hang-hung-hung, 수동태 were + 과거분사
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.inflection.010
+  node: verb.inflection
+  type: blank
+  stem: The criminal was ____ (hang) in 1950.
+  answer: hanged
+  explanation: 사람을 교수형은 hang-hanged-hanged. 물건 hung과 구분
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.inflection.011
+  node: verb.inflection
+  type: blank
+  stem: The report has ____ (write) by the team.
+  answer: been written
+  explanation: 현재완료 수동태는 has been + 과거분사(written)
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.inflection.012
+  node: verb.inflection
+  type: blank
+  stem: Neither of the students ____ (be) late for class yesterday.
+  answer: was
+  explanation: neither of + 복수명사도 단수(0명), 어제이므로 과거
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.inflection.013
+  node: verb.inflection
+  type: blank
+  stem: By the time we arrived, the film ____ (start) already.
+  answer: had started
+  explanation: had + 과거분사, 도착(과거)보다 먼저 시작했으니 과거완료
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.inflection.014
+  node: verb.inflection
+  type: blank
+  stem: The number of visitors ____ (increase) steadily since 2020.
+  answer: has increased
+  explanation: the number of는 단수, a number of 는 복수 (= many, a lot of)
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
+
+- id: verb.inflection.015
+  node: verb.inflection
+  type: blank
+  stem: The window ____ (break) by the storm last night.
+  answer: was broken
+  explanation: 사물 주어가 동작을 받는 대상이므로 수동태(과거형)
+  source: synthetic
+  review: {status: approved, by: kky, date: '2026-11-04'}
