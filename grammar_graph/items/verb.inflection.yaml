@@ -8,7 +8,7 @@ items:
   type: blank
   stem: She ____ (go) to school by bus every day.
   answer: goes
-  explanation: 3인칭 단수 현재: -o로 끝나면 -es
+  explanation: '3인칭 단수 현재: -o로 끝나면 -es'
   source: self
   review: {status: approved, by: kky, date: '2026-11-01'}
 
