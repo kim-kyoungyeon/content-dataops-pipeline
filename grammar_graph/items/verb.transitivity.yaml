@@ -13,7 +13,7 @@ items:
   - of
   - 전치사 필요 없음
   answer: 전치사 필요 없음
-  explanation: discuss는 타동사라 전치사 없이 목적어를 바로 받는다
+  explanation: discuss(3V)는 완전타동사
   source: synthetic
   review: {status: pending}
 
@@ -27,7 +27,7 @@ items:
   - of
   - 전치사 필요 없음
   answer: 전치사 필요 없음
-  explanation: marry는 타동사
+  explanation: marry(3V)는 완전타동사
   source: synthetic
   review: {status: pending}
 
@@ -41,7 +41,7 @@ items:
   - to
   - of
   answer: at
-  explanation: arrive는 자동사라 장소 앞에 at/in이 필요
+  explanation: arrive(1V)는 완전자동사라 장소 앞에 at/in이 필요
   source: synthetic
   review: {status: pending}
 
@@ -53,7 +53,7 @@ items:
   - risen
   - raised
   answer: risen
-  explanation: rise는 자동사(목적어 없음), raise는 타동사
+  explanation: rise(1V)는 완전자동사, raise(3V)는 완전타동사
   source: synthetic
   review: {status: pending}
 
@@ -67,7 +67,7 @@ items:
   - risen
   - arose
   answer: raised
-  explanation: 목적어(taxes)가 있으므로 타동사 raise
+  explanation: 목적어(taxes)가 있으므로 완전타동사 raise(3V)
   source: synthetic
   review: {status: pending}
 
@@ -81,7 +81,7 @@ items:
   - spoke
   - talked
   answer: told
-  explanation: tell은 목적어 두 개를 받는 수여동사, say·speak·talk은 불가
+  explanation: tell은 목적어 두 개를 받는 수여동사(4V), say·speak·talk은 불가
   source: synthetic
   review: {status: pending}
 
@@ -109,7 +109,7 @@ items:
   - They built a house.
   - He opened the door.
   answer: She resembles her mother.
-  explanation: resemble은 상태를 나타내는 타동사라 수동태가 안 된다
+  explanation: resemble(3V)는 상태를 나타내는 완전타동사라 수동태가 안 된다
   source: synthetic
   review: {status: pending}
 
@@ -123,7 +123,7 @@ items:
   - She wrote a letter.
   - They invited me.
   answer: The accident happened last night.
-  explanation: happen은 자동사라 수동태가 안 된다
+  explanation: happen(1V) 완전 자동사  
   source: synthetic
   review: {status: pending}
 
@@ -137,7 +137,7 @@ items:
   - has been died
   - is died
   answer: died
-  explanation: die는 자동사라 수동태 불가
+  explanation: die(1V) 완전자동사
   source: synthetic
   review: {status: pending}
 
@@ -149,7 +149,7 @@ items:
   - 자동사
   - 타동사
   answer: 자동사
-  explanation: two hours는 기간을 나타내는 부사어이지 목적어가 아니다
+  explanation: two hours는 기간을 나타내는 부사어, 목적어가 아니다
   source: synthetic
   review: {status: pending}
 
@@ -161,7 +161,7 @@ items:
   - 자동사
   - 타동사
   answer: 타동사
-  explanation: '''기르다''의 grow는 목적어(tomatoes)를 받는다'
+  explanation: '''기르다''의 grow(3V)는 목적어(tomatoes)를 받는 완전타동사'
   source: synthetic
   review: {status: pending}
 
@@ -173,7 +173,7 @@ items:
   - 자동사
   - 타동사
   answer: 자동사
-  explanation: '''자라다''의 grow는 목적어가 없다'
+  explanation: '''자라다''의 grow(1V)는 완전자동사'
   source: synthetic
   review: {status: pending}
 
@@ -185,7 +185,7 @@ items:
   - 자동사
   - 타동사
   answer: 타동사
-  explanation: '''운영하다''의 run은 목적어를 받는다'
+  explanation: '''운영하다''의 run(3V)는 완전타동사'
   source: synthetic
   review: {status: pending}
 
@@ -197,6 +197,6 @@ items:
   - 자동사
   - 타동사
   answer: 자동사
-  explanation: '''흐르다''의 run은 목적어가 없다'
+  explanation: '''흐르다''의 run(1V)은 완전자동사'
   source: synthetic
   review: {status: pending}
