@@ -18,3 +18,139 @@ items:
     explanation: "불규칙 과거형 buy-bought-bought"
     source: synthetic
     review: {status: pending}
+
+  - id: verb.inflection.003
+    node: verb.inflection
+    type: blank
+    stem: Last week we ____ (see) a movie.
+    answer: saw
+    explanation: see-saw-seen
+    source: synthetic
+    review:
+      status: pending
+  - id: verb.inflection.004
+    node: verb.inflection
+    type: blank
+    stem: He has ____ (write) three letters.
+    answer: written
+    explanation: write-wrote-written. 완료는 과거분사
+    source: synthetic
+    review:
+      status: pending
+  - id: verb.inflection.005
+    node: verb.inflection
+    type: blank
+    stem: The bird ____ (fly) away yesterday.
+    answer: flew
+    explanation: fly-flew-flown
+    source: synthetic
+    review:
+      status: pending
+  - id: verb.inflection.006
+    node: verb.inflection
+    type: blank
+    stem: She has ____ (take) the bus today.
+    answer: taken
+    explanation: take-took-taken
+    source: synthetic
+    review:
+      status: pending
+  - id: verb.inflection.007
+    node: verb.inflection
+    type: blank
+    stem: My brother ____ (study) every night.
+    answer: studies
+    explanation: 자음+y는 y를 i로 바꾸고 -es
+    source: synthetic
+    review:
+      status: pending
+  - id: verb.inflection.008
+    node: verb.inflection
+    type: blank
+    stem: The baby ____ (cry) loudly last night.
+    answer: cried
+    explanation: 자음+y 과거형은 -ied
+    source: synthetic
+    review:
+      status: pending
+  - id: verb.inflection.009
+    node: verb.inflection
+    type: blank
+    stem: I have ____ (eat) lunch already.
+    answer: eaten
+    explanation: eat-ate-eaten
+    source: synthetic
+    review:
+      status: pending
+  - id: verb.inflection.010
+    node: verb.inflection
+    type: blank
+    stem: He ____ (teach) English at a school.
+    answer: teaches
+    explanation: -ch로 끝나면 -es
+    source: synthetic
+    review:
+      status: pending
+  - id: verb.inflection.011
+    node: verb.inflection
+    type: blank
+    stem: They ____ (begin) the game an hour ago.
+    answer: began
+    explanation: begin-began-begun
+    source: synthetic
+    review:
+      status: pending
+  - id: verb.inflection.012
+    node: verb.inflection
+    type: blank
+    stem: Water has ____ (freeze) in the pipe.
+    answer: frozen
+    explanation: freeze-froze-frozen
+    source: synthetic
+    review:
+      status: pending
+  - id: verb.inflection.013
+    node: verb.inflection
+    type: blank
+    stem: She ____ (watch) TV after dinner.
+    answer: watches
+    explanation: -ch로 끝나면 -es
+    source: synthetic
+    review:
+      status: pending
+  - id: verb.inflection.014
+    node: verb.inflection
+    type: blank
+    stem: The glass ____ (break) when it fell.
+    answer: broke
+    explanation: break-broke-broken
+    source: synthetic
+    review:
+      status: pending
+  - id: verb.inflection.015
+    node: verb.inflection
+    type: blank
+    stem: He has ____ (give) me a gift.
+    answer: given
+    explanation: give-gave-given
+    source: synthetic
+    review:
+      status: pending
+  - id: verb.inflection.016
+    node: verb.inflection
+    type: blank
+    stem: Tom ____ (do) his homework every day.
+    answer: does
+    explanation: do의 3인칭 단수는 does
+    source: synthetic
+    review:
+      status: pending
+  - id: verb.inflection.017
+    node: verb.inflection
+    type: blank
+    stem: The sun has ____ (rise) already.
+    answer: risen
+    explanation: rise-rose-risen
+    source: synthetic
+    review:
+      status: pending

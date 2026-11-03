@@ -1,0 +1,183 @@
+# DRAFT items (synthetic). 검수 전에는 review.status 를 pending 으로 둔다.
+# Rule: no items copied or adapted from employers or commercial textbooks.
+items:
+- id: verb.transitivity.001
+  node: verb.transitivity
+  type: choice
+  stem: The bus arrived late. (밑줄 친 동사는 자동사인가 타동사인가?)
+  choices:
+  - 자동사
+  - 타동사
+  answer: 자동사
+  explanation: arrive는 목적어 없이 쓰는 자동사
+  source: synthetic
+  review:
+    status: pending
+- id: verb.transitivity.002
+  node: verb.transitivity
+  type: choice
+  stem: She opened the window. (밑줄 친 동사는 자동사인가 타동사인가?)
+  choices:
+  - 자동사
+  - 타동사
+  answer: 타동사
+  explanation: the window가 목적어
+  source: synthetic
+  review:
+    status: pending
+- id: verb.transitivity.003
+  node: verb.transitivity
+  type: choice
+  stem: He sleeps well. (밑줄 친 동사는 자동사인가 타동사인가?)
+  choices:
+  - 자동사
+  - 타동사
+  answer: 자동사
+  explanation: sleep은 목적어 없이 쓰는 자동사
+  source: synthetic
+  review:
+    status: pending
+- id: verb.transitivity.004
+  node: verb.transitivity
+  type: choice
+  stem: I bought a new bag. (밑줄 친 동사는 자동사인가 타동사인가?)
+  choices:
+  - 자동사
+  - 타동사
+  answer: 타동사
+  explanation: a new bag이 목적어
+  source: synthetic
+  review:
+    status: pending
+- id: verb.transitivity.005
+  node: verb.transitivity
+  type: choice
+  stem: The sun rises in the east. (밑줄 친 동사는 자동사인가 타동사인가?)
+  choices:
+  - 자동사
+  - 타동사
+  answer: 자동사
+  explanation: rise는 자동사(raise는 타동사)
+  source: synthetic
+  review:
+    status: pending
+- id: verb.transitivity.006
+  node: verb.transitivity
+  type: choice
+  stem: They discussed the plan. (밑줄 친 동사는 자동사인가 타동사인가?)
+  choices:
+  - 자동사
+  - 타동사
+  answer: 타동사
+  explanation: discuss는 about 없이 바로 목적어를 받는 타동사
+  source: synthetic
+  review:
+    status: pending
+- id: verb.transitivity.007
+  node: verb.transitivity
+  type: choice
+  stem: She became a teacher. (밑줄 친 동사는 자동사인가 타동사인가?)
+  choices:
+  - 자동사
+  - 타동사
+  answer: 자동사
+  explanation: become은 보어를 취하는 2형식 자동사
+  source: synthetic
+  review:
+    status: pending
+- id: verb.transitivity.008
+  node: verb.transitivity
+  type: choice
+  stem: The soup smells good. (밑줄 친 동사는 자동사인가 타동사인가?)
+  choices:
+  - 자동사
+  - 타동사
+  answer: 자동사
+  explanation: 감각동사 smell은 형용사 보어를 취하는 자동사
+  source: synthetic
+  review:
+    status: pending
+- id: verb.transitivity.009
+  node: verb.transitivity
+  type: choice
+  stem: He gave her a book. (밑줄 친 동사는 자동사인가 타동사인가?)
+  choices:
+  - 자동사
+  - 타동사
+  answer: 타동사
+  explanation: give는 목적어 두 개를 받는 수여동사(4형식)
+  source: synthetic
+  review:
+    status: pending
+- id: verb.transitivity.010
+  node: verb.transitivity
+  type: choice
+  stem: My dog died last night. (밑줄 친 동사는 자동사인가 타동사인가?)
+  choices:
+  - 자동사
+  - 타동사
+  answer: 자동사
+  explanation: die는 목적어 없이 쓰는 자동사
+  source: synthetic
+  review:
+    status: pending
+- id: verb.transitivity.011
+  node: verb.transitivity
+  type: choice
+  stem: We reached the station. (밑줄 친 동사는 자동사인가 타동사인가?)
+  choices:
+  - 자동사
+  - 타동사
+  answer: 타동사
+  explanation: reach는 전치사 없이 목적어를 받는 타동사
+  source: synthetic
+  review:
+    status: pending
+- id: verb.transitivity.012
+  node: verb.transitivity
+  type: choice
+  stem: She married him. (밑줄 친 동사는 자동사인가 타동사인가?)
+  choices:
+  - 자동사
+  - 타동사
+  answer: 타동사
+  explanation: marry는 with 없이 목적어를 받는 타동사
+  source: synthetic
+  review:
+    status: pending
+- id: verb.transitivity.013
+  node: verb.transitivity
+  type: choice
+  stem: The leaves turned red. (밑줄 친 동사는 자동사인가 타동사인가?)
+  choices:
+  - 자동사
+  - 타동사
+  answer: 자동사
+  explanation: turn + 형용사 보어는 2형식 자동사
+  source: synthetic
+  review:
+    status: pending
+- id: verb.transitivity.014
+  node: verb.transitivity
+  type: choice
+  stem: He told me the truth. (밑줄 친 동사는 자동사인가 타동사인가?)
+  choices:
+  - 자동사
+  - 타동사
+  answer: 타동사
+  explanation: tell은 목적어 두 개를 받는 수여동사
+  source: synthetic
+  review:
+    status: pending
+- id: verb.transitivity.015
+  node: verb.transitivity
+  type: choice
+  stem: The accident happened yesterday. (밑줄 친 동사는 자동사인가 타동사인가?)
+  choices:
+  - 자동사
+  - 타동사
+  answer: 자동사
+  explanation: happen은 목적어 없이 쓰는 자동사
+  source: synthetic
+  review:
+    status: pending

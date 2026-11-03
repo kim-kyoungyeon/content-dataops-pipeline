@@ -1,0 +1,198 @@
+# DRAFT items (synthetic). 검수 전에는 review.status 를 pending 으로 둔다.
+# Rule: no items copied or adapted from employers or commercial textbooks.
+items:
+- id: verb.tense.001
+  node: verb.tense
+  type: choice
+  stem: She ____ breakfast when I called.
+  choices:
+  - was having
+  - has had
+  - had
+  - is having
+  answer: was having
+  explanation: 과거 어느 시점에 진행 중이던 동작은 과거진행
+  source: synthetic
+  review:
+    status: pending
+- id: verb.tense.002
+  node: verb.tense
+  type: choice
+  stem: I ____ him yesterday.
+  choices:
+  - have met
+  - met
+  - meet
+  - am meeting
+  answer: met
+  explanation: yesterday 같은 과거 시점 표현은 단순과거
+  source: synthetic
+  review:
+    status: pending
+- id: verb.tense.003
+  node: verb.tense
+  type: choice
+  stem: We ____ here since last year.
+  choices:
+  - live
+  - lived
+  - have lived
+  - are living
+  answer: have lived
+  explanation: since는 과거부터 지금까지 이어지는 현재완료
+  source: synthetic
+  review:
+    status: pending
+- id: verb.tense.004
+  node: verb.tense
+  type: choice
+  stem: The train ____ before we arrived.
+  choices:
+  - left
+  - had left
+  - has left
+  - leaves
+  answer: had left
+  explanation: 도착한 시점보다 먼저 일어난 일은 과거완료
+  source: synthetic
+  review:
+    status: pending
+- id: verb.tense.005
+  node: verb.tense
+  type: choice
+  stem: Look! It ____ now.
+  choices:
+  - rains
+  - is raining
+  - rained
+  - has rained
+  answer: is raining
+  explanation: 지금 진행 중인 동작은 현재진행
+  source: synthetic
+  review:
+    status: pending
+- id: verb.tense.006
+  node: verb.tense
+  type: choice
+  stem: Water ____ at 100 degrees Celsius.
+  choices:
+  - boils
+  - is boiling
+  - boiled
+  - has boiled
+  answer: boils
+  explanation: 일반적 사실은 현재형
+  source: synthetic
+  review:
+    status: pending
+- id: verb.tense.007
+  node: verb.tense
+  type: choice
+  stem: Tomorrow she ____ the museum.
+  choices:
+  - visits
+  - visited
+  - will visit
+  - has visited
+  answer: will visit
+  explanation: 미래 시점 tomorrow와 예정은 will + 동사원형
+  source: synthetic
+  review:
+    status: pending
+- id: verb.tense.008
+  node: verb.tense
+  type: choice
+  stem: When I arrived, the movie ____ already.
+  choices:
+  - started
+  - had started
+  - has started
+  - starts
+  answer: had started
+  explanation: 도착(과거)보다 먼저 시작했으므로 과거완료
+  source: synthetic
+  review:
+    status: pending
+- id: verb.tense.009
+  node: verb.tense
+  type: choice
+  stem: I ____ this book three times so far.
+  choices:
+  - read
+  - have read
+  - had read
+  - am reading
+  answer: have read
+  explanation: so far와 경험 횟수는 현재완료
+  source: synthetic
+  review:
+    status: pending
+- id: verb.tense.010
+  node: verb.tense
+  type: choice
+  stem: Ten years ago, he ____ in Busan.
+  choices:
+  - lives
+  - lived
+  - has lived
+  - is living
+  answer: lived
+  explanation: ago는 단순과거와 함께 쓴다
+  source: synthetic
+  review:
+    status: pending
+- id: verb.tense.011
+  node: verb.tense
+  type: choice
+  stem: If it rains tomorrow, we ____ at home.
+  choices:
+  - will stay
+  - stayed
+  - have stayed
+  - was staying
+  answer: will stay
+  explanation: 조건절은 현재형, 주절은 미래
+  source: synthetic
+  review:
+    status: pending
+- id: verb.tense.012
+  node: verb.tense
+  type: choice
+  stem: She ____ for two hours when he came.
+  choices:
+  - has studied
+  - had been studying
+  - studies
+  - is studying
+  answer: had been studying
+  explanation: 과거 시점까지 계속된 동작은 과거완료진행
+  source: synthetic
+  review:
+    status: pending
+- id: verb.tense.013
+  node: verb.tense
+  type: blank
+  stem: I ____ (take) a shower when the phone rang.
+  answer: was taking
+  explanation: 과거에 진행 중이던 동작은 was/were + -ing
+  source: synthetic
+  review:
+    status: pending
+- id: verb.tense.014
+  node: verb.tense
+  type: blank
+  stem: The sun ____ (rise) in the east.
+  answer: rises
+  explanation: 변하지 않는 사실은 현재형
+  source: synthetic
+  review:
+    status: pending
+- id: verb.tense.015
+  node: verb.tense
+  type: blank
+  stem: By next month, they ____ (finish) the project.
+  answer: will have finished
+  explanation: 미래 시점까지의 완료는 will have + 과거분사
+  source: synthetic
+  review:
+    status: pending
