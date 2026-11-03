@@ -27,7 +27,7 @@ items:
   - was closed
   - had closed
   answer: has been closed
-  explanation: since절의 과거에서 지금까지 이어지는 현재완료 수동태
+  explanation: since절의 과거에서 현재까지 이어지는 현재완료 수동태
   source: synthetic
   review: {status: pending}
 
@@ -55,7 +55,7 @@ items:
   - did she open
   - she opened
   answer: had she opened
-  explanation: No sooner가 문두에 오면 도치, 먼저 일어난 일은 과거완료
+  explanation: No sooner가 문두에 오면 [had + 주어 + p.p.](과거완료 도치)가 온다
   source: synthetic
   review: {status: pending}
 
@@ -69,7 +69,7 @@ items:
   - has studied
   - would study
   answer: had studied
-  explanation: 가정법 과거완료는 if + had p.p., 주절 would have p.p.
+  explanation: 가정법 과거완료는 if + had p.p.(과거완료), 주절 would(조동사 과거) + have p.p.
   source: synthetic
   review: {status: pending}
 
@@ -83,7 +83,7 @@ items:
   - has completed
   - had completed
   answer: was completed
-  explanation: 완공되는 것이므로 수동태, 과거 시점
+  explanation: 완공되는 것이므로 수동태, 과거 시점(종료)
   source: synthetic
   review: {status: pending}
 
@@ -97,7 +97,7 @@ items:
   - is raining
   - rained
   answer: is going to
-  explanation: 눈앞의 근거로 하는 예측은 be going to
+  explanation: be going to는 예정된 미래 / 눈앞의 근거로 하는 예측, will은 즉흥적인 결정 / 막연한 추측·의지
   source: synthetic
   review: {status: pending}
 
@@ -111,7 +111,7 @@ items:
   - had read
   - will read
   answer: had read
-  explanation: said(과거)보다 앞선 일은 과거완료(시제 일치)
+  explanation: said(과거)보다 앞서 완료된 일은 과거완료(시제 일치)
   source: synthetic
   review: {status: pending}
 
@@ -125,7 +125,7 @@ items:
   - got
   - am getting
   answer: get
-  explanation: 시간 부사절에서는 미래 대신 현재형
+  explanation: 시간 부사절(as soon as, when)에서는 미래 대신 현재형
   source: synthetic
   review: {status: pending}
 
@@ -134,7 +134,7 @@ items:
   type: blank
   stem: Since the project began, the team ____ (make) steady progress.
   answer: has made
-  explanation: since가 이끄는 과거에서 지금까지는 현재완료
+  explanation: since가 이끄는 과거에서 현재까지는 현재완료(계속적 용법)
   source: synthetic
   review: {status: pending}
 
@@ -161,7 +161,7 @@ items:
   type: blank
   stem: By 2030, scientists ____ (develop) a new vaccine.
   answer: will have developed
-  explanation: 미래 시점까지의 완료는 will have p.p.
+  explanation: 미래 시점까지의 완료 능동태는 will have p.p.
   source: synthetic
   review: {status: pending}
 
@@ -175,7 +175,7 @@ items:
   - are
   - were
   answer: has
-  explanation: the number of는 단수 취급, 완료 시제는 has p.p.
+  explanation: the number of는 단수 취급, a number of 는 복수 취급.
   source: synthetic
   review: {status: pending}
 
@@ -189,6 +189,6 @@ items:
   - had had
   - would have
   answer: had had
-  explanation: 과거 사실의 반대 소망은 wish + 과거완료
+  explanation: 과거사실의 반대 (해석: 어제 시간이 없었다) 
   source: synthetic
   review: {status: pending}
