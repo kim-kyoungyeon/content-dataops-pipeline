@@ -2,6 +2,7 @@
 # 난이도 기준: 고1~고3. 공식 교육과정 매핑이 아니라 작업용 기준.
 # Rule: no items copied or adapted from employers or commercial textbooks.
 items:
+
 - id: verb.transitivity.001
   node: verb.transitivity
   type: choice
@@ -14,8 +15,8 @@ items:
   answer: 전치사 필요 없음
   explanation: discuss는 타동사라 전치사 없이 목적어를 바로 받는다
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.transitivity.002
   node: verb.transitivity
   type: choice
@@ -28,8 +29,8 @@ items:
   answer: 전치사 필요 없음
   explanation: marry는 타동사
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.transitivity.003
   node: verb.transitivity
   type: choice
@@ -42,8 +43,8 @@ items:
   answer: at
   explanation: arrive는 자동사라 장소 앞에 at/in이 필요
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.transitivity.004
   node: verb.transitivity
   type: choice
@@ -54,8 +55,8 @@ items:
   answer: risen
   explanation: rise는 자동사(목적어 없음), raise는 타동사
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.transitivity.005
   node: verb.transitivity
   type: choice
@@ -68,8 +69,8 @@ items:
   answer: raised
   explanation: 목적어(taxes)가 있으므로 타동사 raise
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.transitivity.006
   node: verb.transitivity
   type: choice
@@ -82,8 +83,8 @@ items:
   answer: told
   explanation: tell은 목적어 두 개를 받는 수여동사, say·speak·talk은 불가
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.transitivity.007
   node: verb.transitivity
   type: choice
@@ -96,8 +97,8 @@ items:
   answer: tastes
   explanation: 감각동사 + 형용사 보어(2형식 자동사)
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.transitivity.008
   node: verb.transitivity
   type: choice
@@ -110,8 +111,8 @@ items:
   answer: She resembles her mother.
   explanation: resemble은 상태를 나타내는 타동사라 수동태가 안 된다
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.transitivity.009
   node: verb.transitivity
   type: choice
@@ -124,8 +125,8 @@ items:
   answer: The accident happened last night.
   explanation: happen은 자동사라 수동태가 안 된다
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.transitivity.010
   node: verb.transitivity
   type: choice
@@ -138,8 +139,8 @@ items:
   answer: died
   explanation: die는 자동사라 수동태 불가
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.transitivity.011
   node: verb.transitivity
   type: choice
@@ -150,8 +151,8 @@ items:
   answer: 자동사
   explanation: two hours는 기간을 나타내는 부사어이지 목적어가 아니다
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.transitivity.012
   node: verb.transitivity
   type: choice
@@ -162,8 +163,8 @@ items:
   answer: 타동사
   explanation: '''기르다''의 grow는 목적어(tomatoes)를 받는다'
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.transitivity.013
   node: verb.transitivity
   type: choice
@@ -174,8 +175,8 @@ items:
   answer: 자동사
   explanation: '''자라다''의 grow는 목적어가 없다'
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.transitivity.014
   node: verb.transitivity
   type: choice
@@ -186,8 +187,8 @@ items:
   answer: 타동사
   explanation: '''운영하다''의 run은 목적어를 받는다'
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.transitivity.015
   node: verb.transitivity
   type: choice
@@ -198,5 +199,4 @@ items:
   answer: 자동사
   explanation: '''흐르다''의 run은 목적어가 없다'
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}

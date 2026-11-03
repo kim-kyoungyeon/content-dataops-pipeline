@@ -2,6 +2,7 @@
 # 난이도 기준: 고1~고3. 공식 교육과정 매핑이 아니라 작업용 기준.
 # Rule: no items copied or adapted from employers or commercial textbooks.
 items:
+
 - id: verb.inflection.001
   node: verb.inflection
   type: blank
@@ -9,10 +10,8 @@ items:
   answer: goes
   explanation: '3인칭 단수 현재: -o로 끝나면 -es'
   source: self
-  review:
-    status: approved
-    by: kky
-    date: '2026-11-01'
+  review: {status: approved, by: kky, date: '2026-11-01'}
+
 - id: verb.inflection.002
   node: verb.inflection
   type: blank
@@ -20,8 +19,8 @@ items:
   answer: undergone
   explanation: undergo-underwent-undergone
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.inflection.003
   node: verb.inflection
   type: blank
@@ -29,8 +28,8 @@ items:
   answer: risen
   explanation: rise-rose-risen. 현재완료는 과거분사
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.inflection.004
   node: verb.inflection
   type: blank
@@ -38,8 +37,8 @@ items:
   answer: withdrew
   explanation: withdraw-withdrew-withdrawn
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.inflection.005
   node: verb.inflection
   type: blank
@@ -47,8 +46,8 @@ items:
   answer: shrunk
   explanation: shrink-shrank-shrunk
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.inflection.006
   node: verb.inflection
   type: blank
@@ -56,8 +55,8 @@ items:
   answer: lay
   explanation: lie(눕다)-lay-lain. 타동사 lay(놓다)와 구분
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.inflection.007
   node: verb.inflection
   type: blank
@@ -65,8 +64,8 @@ items:
   answer: laid
   explanation: lay(놓다)-laid-laid. 목적어(the baby)가 있으면 타동사 lay
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.inflection.008
   node: verb.inflection
   type: blank
@@ -74,8 +73,8 @@ items:
   answer: raised
   explanation: raise(올리다, 타동사)-raised-raised. 자동사 rise와 구분
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.inflection.009
   node: verb.inflection
   type: blank
@@ -83,8 +82,8 @@ items:
   answer: hung
   explanation: 물건을 걸다는 hang-hung-hung
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.inflection.010
   node: verb.inflection
   type: blank
@@ -92,8 +91,8 @@ items:
   answer: hanged
   explanation: 사람을 교수형에 처하다는 hang-hanged-hanged
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.inflection.011
   node: verb.inflection
   type: blank
@@ -101,8 +100,8 @@ items:
   answer: been written
   explanation: 현재완료 수동태는 has been + 과거분사
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.inflection.012
   node: verb.inflection
   type: blank
@@ -110,8 +109,8 @@ items:
   answer: was
   explanation: neither of + 복수명사도 단수 취급, 어제이므로 과거
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.inflection.013
   node: verb.inflection
   type: blank
@@ -119,8 +118,8 @@ items:
   answer: had started
   explanation: 도착(과거)보다 먼저 시작했으므로 과거완료
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.inflection.014
   node: verb.inflection
   type: blank
@@ -128,8 +127,8 @@ items:
   answer: has increased
   explanation: the number of는 단수, since는 현재완료
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
+
 - id: verb.inflection.015
   node: verb.inflection
   type: blank
@@ -137,5 +136,4 @@ items:
   answer: was broken
   explanation: 주어가 동작을 받으므로 수동태, 과거
   source: synthetic
-  review:
-    status: pending
+  review: {status: pending}
