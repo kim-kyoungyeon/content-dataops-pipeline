@@ -1,3 +1,4 @@
+# 검수 완료: kky, 2026-11-04 (전체 approved)
 # DRAFT items (synthetic). 검수 전에는 review.status 를 pending 으로 둔다.
 # 난이도 기준: 고1~고3. 공식 교육과정 매핑이 아니라 작업용 기준.
 # Rule: no items copied or adapted from employers or commercial textbooks.
@@ -15,7 +16,7 @@ items:
   answer: 전치사 필요 없음
   explanation: discuss(3V)는 완전타동사
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.transitivity.002
   node: verb.transitivity
@@ -29,7 +30,7 @@ items:
   answer: 전치사 필요 없음
   explanation: marry(3V)는 완전타동사
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.transitivity.003
   node: verb.transitivity
@@ -43,7 +44,7 @@ items:
   answer: at
   explanation: arrive(1V)는 완전자동사라 장소 앞에 at/in이 필요
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.transitivity.004
   node: verb.transitivity
@@ -55,7 +56,7 @@ items:
   answer: risen
   explanation: rise(1V)는 완전자동사, raise(3V)는 완전타동사
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.transitivity.005
   node: verb.transitivity
@@ -69,7 +70,7 @@ items:
   answer: raised
   explanation: 목적어(taxes)가 있으므로 완전타동사 raise(3V)
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.transitivity.006
   node: verb.transitivity
@@ -83,7 +84,7 @@ items:
   answer: told
   explanation: tell은 목적어 두 개를 받는 수여동사(4V), say·speak·talk은 불가
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.transitivity.007
   node: verb.transitivity
@@ -97,7 +98,7 @@ items:
   answer: tastes
   explanation: 감각동사 + 형용사 보어(2형식 자동사)
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.transitivity.008
   node: verb.transitivity
@@ -111,7 +112,7 @@ items:
   answer: She resembles her mother.
   explanation: resemble(3V)는 상태를 나타내는 완전타동사라 수동태가 안 된다
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.transitivity.009
   node: verb.transitivity
@@ -125,7 +126,7 @@ items:
   answer: The accident happened last night.
   explanation: happen(1V) 완전 자동사  
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.transitivity.010
   node: verb.transitivity
@@ -139,7 +140,7 @@ items:
   answer: died
   explanation: die(1V) 완전자동사
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.transitivity.011
   node: verb.transitivity
@@ -151,7 +152,7 @@ items:
   answer: 자동사
   explanation: two hours는 기간을 나타내는 부사어, 목적어가 아니다
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.transitivity.012
   node: verb.transitivity
@@ -163,7 +164,7 @@ items:
   answer: 타동사
   explanation: '''기르다''의 grow(3V)는 목적어(tomatoes)를 받는 완전타동사'
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.transitivity.013
   node: verb.transitivity
@@ -175,7 +176,7 @@ items:
   answer: 자동사
   explanation: '''자라다''의 grow(1V)는 완전자동사'
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.transitivity.014
   node: verb.transitivity
@@ -187,7 +188,7 @@ items:
   answer: 타동사
   explanation: '''운영하다''의 run(3V)는 완전타동사'
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.transitivity.015
   node: verb.transitivity
@@ -199,4 +200,64 @@ items:
   answer: 자동사
   explanation: '''흐르다''의 run(1V)은 완전자동사'
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
+
+- id: verb.transitivity.016
+  node: verb.transitivity
+  type: choice
+  stem: She ____ English very well.
+  choices: [speaks, talks, talks to, says]
+  answer: speaks
+  explanation: speak(3V)는 언어를 목적어로 받음. talk(1V)는 전치사 필요(talk to 사람)
+  source: synthetic
+  review: {status: approved, by: kky, date: "2026-11-04"}
+
+- id: verb.transitivity.017
+  node: verb.transitivity
+  type: choice
+  stem: The coach made the players ____ every morning.
+  choices: [run, to run, running, ran]
+  answer: run
+  explanation: make(5V 사역동사) + 목적어 + 동사원형(목적어가 직접 하는 일)
+  source: synthetic
+  review: {status: approved, by: kky, date: "2026-11-04"}
+
+- id: verb.transitivity.018
+  node: verb.transitivity
+  type: choice
+  stem: I heard someone ____ my name.
+  choices: [call, to call, calls, calling to]
+  answer: call
+  explanation: hear(5V 지각동사) + 목적어 + 동사원형
+  source: synthetic
+  review: {status: approved, by: kky, date: "2026-11-04"}
+
+- id: verb.transitivity.019
+  node: verb.transitivity
+  type: choice
+  stem: I was ____ in the movie.
+  choices: [interesting, interested, interest, interests]
+  answer: interested
+  explanation: interest(3V)는 '흥미를 일으키다'. 사람은 흥미를 느끼는 쪽이라 수동 be interested in
+  source: synthetic
+  review: {status: approved, by: kky, date: "2026-11-04"}
+
+- id: verb.transitivity.020
+  node: verb.transitivity
+  type: choice
+  stem: The story was so ____ that everyone cried.
+  choices: [touching, touched, touch, touches]
+  answer: touching
+  explanation: touch(3V)는 '감동시키다'. 이야기가 감동을 주는 쪽이라 능동 touching
+  source: synthetic
+  review: {status: approved, by: kky, date: "2026-11-04"}
+
+- id: verb.transitivity.021
+  node: verb.transitivity
+  type: choice
+  stem: This blanket ____ very soft.
+  choices: [feels, is felt, feels like, is feeling]
+  answer: feels
+  explanation: feel(2V)은 '느껴지다'(감각동사) + 형용사 보어. 모양은 능동, 뜻은 느껴지다
+  source: synthetic
+  review: {status: approved, by: kky, date: "2026-11-04"}

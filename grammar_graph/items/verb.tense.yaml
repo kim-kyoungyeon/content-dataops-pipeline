@@ -1,3 +1,4 @@
+# 검수 완료: kky, 2026-11-04 (전체 approved)
 # DRAFT items (synthetic). 검수 전에는 review.status 를 pending 으로 둔다.
 # 난이도 기준: 고1~고3. 공식 교육과정 매핑이 아니라 작업용 기준.
 # Rule: no items copied or adapted from employers or commercial textbooks.
@@ -15,7 +16,7 @@ items:
   answer: will have worked
   explanation: 미래 시점까지의 계속은 미래완료
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.tense.002
   node: verb.tense
@@ -29,7 +30,7 @@ items:
   answer: has been closed
   explanation: since절의 과거에서 현재까지 이어지는 현재완료 수동태
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.tense.003
   node: verb.tense
@@ -43,7 +44,7 @@ items:
   answer: had been waiting
   explanation: 과거 시점까지 계속된 동작은 과거완료진행
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.tense.004
   node: verb.tense
@@ -57,7 +58,7 @@ items:
   answer: had she opened
   explanation: No sooner가 문두에 오면 [had + 주어 + p.p.](과거완료 도치)가 온다
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.tense.005
   node: verb.tense
@@ -71,7 +72,7 @@ items:
   answer: had studied
   explanation: 가정법 과거완료는 if + had p.p.(과거완료), 주절 would(조동사 과거) + have p.p.
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.tense.006
   node: verb.tense
@@ -85,7 +86,7 @@ items:
   answer: was completed
   explanation: 완공되는 것이므로 수동태, 과거 시점(종료)
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.tense.007
   node: verb.tense
@@ -99,7 +100,7 @@ items:
   answer: is going to
   explanation: be going to는 예정된 미래 / 눈앞의 근거로 하는 예측, will은 즉흥적인 결정 / 막연한 추측·의지
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.tense.008
   node: verb.tense
@@ -113,7 +114,7 @@ items:
   answer: had read
   explanation: said(과거)보다 앞서 완료된 일은 과거완료(시제 일치)
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.tense.009
   node: verb.tense
@@ -127,7 +128,7 @@ items:
   answer: get
   explanation: 시간 부사절(as soon as, when)에서는 미래 대신 현재형
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.tense.010
   node: verb.tense
@@ -136,7 +137,7 @@ items:
   answer: has made
   explanation: since가 이끄는 과거에서 현재까지는 현재완료(계속적 용법)
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.tense.011
   node: verb.tense
@@ -145,7 +146,7 @@ items:
   answer: were being reviewed
   explanation: 과거에 진행 중이던 수동태는 were being + p.p.
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.tense.012
   node: verb.tense
@@ -154,7 +155,7 @@ items:
   answer: moves
   explanation: 불변의 사실은 주절이 과거여도 현재형
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.tense.013
   node: verb.tense
@@ -163,7 +164,7 @@ items:
   answer: will have developed
   explanation: 미래 시점까지의 완료 능동태는 will have p.p.
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.tense.014
   node: verb.tense
@@ -177,7 +178,7 @@ items:
   answer: has
   explanation: the number of는 단수 취급, a number of 는 복수 취급.
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
 
 - id: verb.tense.015
   node: verb.tense
@@ -189,6 +190,6 @@ items:
   - had had
   - would have
   answer: had had
-  explanation: 과거사실의 반대 (해석: 어제 시간이 없었다) 
+  explanation: "과거사실의 반대 (해석: 어제 시간이 없었다) "
   source: synthetic
-  review: {status: pending}
+  review: {status: approved, by: kky, date: "2026-11-04"}
