@@ -1,198 +1,194 @@
 # DRAFT items (synthetic). 검수 전에는 review.status 를 pending 으로 둔다.
+# 난이도 기준: 고1~고3. 공식 교육과정 매핑이 아니라 작업용 기준.
 # Rule: no items copied or adapted from employers or commercial textbooks.
 items:
 - id: verb.tense.001
   node: verb.tense
   type: choice
-  stem: She ____ breakfast when I called.
+  stem: By the time she retires next year, she ____ for the company for 30 years.
   choices:
-  - was having
-  - has had
-  - had
-  - is having
-  answer: was having
-  explanation: 과거 어느 시점에 진행 중이던 동작은 과거진행
+  - works
+  - has worked
+  - will have worked
+  - had worked
+  answer: will have worked
+  explanation: 미래 시점까지의 계속은 미래완료
   source: synthetic
   review:
     status: pending
 - id: verb.tense.002
   node: verb.tense
   type: choice
-  stem: I ____ him yesterday.
+  stem: The museum ____ since it was damaged by the fire in 2019.
   choices:
-  - have met
-  - met
-  - meet
-  - am meeting
-  answer: met
-  explanation: yesterday 같은 과거 시점 표현은 단순과거
+  - closes
+  - has been closed
+  - was closed
+  - had closed
+  answer: has been closed
+  explanation: since절의 과거에서 지금까지 이어지는 현재완료 수동태
   source: synthetic
   review:
     status: pending
 - id: verb.tense.003
   node: verb.tense
   type: choice
-  stem: We ____ here since last year.
+  stem: I ____ him for ten minutes before he finally showed up.
   choices:
-  - live
-  - lived
-  - have lived
-  - are living
-  answer: have lived
-  explanation: since는 과거부터 지금까지 이어지는 현재완료
+  - waited
+  - have waited
+  - had been waiting
+  - will wait
+  answer: had been waiting
+  explanation: 과거 시점까지 계속된 동작은 과거완료진행
   source: synthetic
   review:
     status: pending
 - id: verb.tense.004
   node: verb.tense
   type: choice
-  stem: The train ____ before we arrived.
+  stem: No sooner ____ the door than the phone rang.
   choices:
-  - left
-  - had left
-  - has left
-  - leaves
-  answer: had left
-  explanation: 도착한 시점보다 먼저 일어난 일은 과거완료
+  - had she opened
+  - she had opened
+  - did she open
+  - she opened
+  answer: had she opened
+  explanation: No sooner가 문두에 오면 도치, 먼저 일어난 일은 과거완료
   source: synthetic
   review:
     status: pending
 - id: verb.tense.005
   node: verb.tense
   type: choice
-  stem: Look! It ____ now.
+  stem: If he ____ harder, he would have passed the exam.
   choices:
-  - rains
-  - is raining
-  - rained
-  - has rained
-  answer: is raining
-  explanation: 지금 진행 중인 동작은 현재진행
+  - studied
+  - had studied
+  - has studied
+  - would study
+  answer: had studied
+  explanation: 가정법 과거완료는 if + had p.p., 주절 would have p.p.
   source: synthetic
   review:
     status: pending
 - id: verb.tense.006
   node: verb.tense
   type: choice
-  stem: Water ____ at 100 degrees Celsius.
+  stem: The bridge ____ in 2025 and is now open to the public.
   choices:
-  - boils
-  - is boiling
-  - boiled
-  - has boiled
-  answer: boils
-  explanation: 일반적 사실은 현재형
+  - is completed
+  - was completed
+  - has completed
+  - had completed
+  answer: was completed
+  explanation: 완공되는 것이므로 수동태, 과거 시점
   source: synthetic
   review:
     status: pending
 - id: verb.tense.007
   node: verb.tense
   type: choice
-  stem: Tomorrow she ____ the museum.
+  stem: Look at those clouds. It ____ rain soon.
   choices:
-  - visits
-  - visited
-  - will visit
-  - has visited
-  answer: will visit
-  explanation: 미래 시점 tomorrow와 예정은 will + 동사원형
+  - will
+  - is going to
+  - is raining
+  - rained
+  answer: is going to
+  explanation: 눈앞의 근거로 하는 예측은 be going to
   source: synthetic
   review:
     status: pending
 - id: verb.tense.008
   node: verb.tense
   type: choice
-  stem: When I arrived, the movie ____ already.
+  stem: She said that she ____ the book already.
   choices:
-  - started
-  - had started
-  - has started
-  - starts
-  answer: had started
-  explanation: 도착(과거)보다 먼저 시작했으므로 과거완료
+  - reads
+  - has read
+  - had read
+  - will read
+  answer: had read
+  explanation: said(과거)보다 앞선 일은 과거완료(시제 일치)
   source: synthetic
   review:
     status: pending
 - id: verb.tense.009
   node: verb.tense
   type: choice
-  stem: I ____ this book three times so far.
+  stem: I will call you as soon as I ____ home.
   choices:
-  - read
-  - have read
-  - had read
-  - am reading
-  answer: have read
-  explanation: so far와 경험 횟수는 현재완료
+  - will get
+  - get
+  - got
+  - am getting
+  answer: get
+  explanation: 시간 부사절에서는 미래 대신 현재형
   source: synthetic
   review:
     status: pending
 - id: verb.tense.010
   node: verb.tense
-  type: choice
-  stem: Ten years ago, he ____ in Busan.
-  choices:
-  - lives
-  - lived
-  - has lived
-  - is living
-  answer: lived
-  explanation: ago는 단순과거와 함께 쓴다
+  type: blank
+  stem: Since the project began, the team ____ (make) steady progress.
+  answer: has made
+  explanation: since가 이끄는 과거에서 지금까지는 현재완료
   source: synthetic
   review:
     status: pending
 - id: verb.tense.011
   node: verb.tense
-  type: choice
-  stem: If it rains tomorrow, we ____ at home.
-  choices:
-  - will stay
-  - stayed
-  - have stayed
-  - was staying
-  answer: will stay
-  explanation: 조건절은 현재형, 주절은 미래
+  type: blank
+  stem: The documents ____ (review) by the manager when I arrived.
+  answer: were being reviewed
+  explanation: 과거에 진행 중이던 수동태는 were being + p.p.
   source: synthetic
   review:
     status: pending
 - id: verb.tense.012
   node: verb.tense
-  type: choice
-  stem: She ____ for two hours when he came.
-  choices:
-  - has studied
-  - had been studying
-  - studies
-  - is studying
-  answer: had been studying
-  explanation: 과거 시점까지 계속된 동작은 과거완료진행
+  type: blank
+  stem: The earth ____ (move) around the sun, as the teacher explained.
+  answer: moves
+  explanation: 불변의 사실은 주절이 과거여도 현재형
   source: synthetic
   review:
     status: pending
 - id: verb.tense.013
   node: verb.tense
   type: blank
-  stem: I ____ (take) a shower when the phone rang.
-  answer: was taking
-  explanation: 과거에 진행 중이던 동작은 was/were + -ing
+  stem: By 2030, scientists ____ (develop) a new vaccine.
+  answer: will have developed
+  explanation: 미래 시점까지의 완료는 will have p.p.
   source: synthetic
   review:
     status: pending
 - id: verb.tense.014
   node: verb.tense
-  type: blank
-  stem: The sun ____ (rise) in the east.
-  answer: rises
-  explanation: 변하지 않는 사실은 현재형
+  type: choice
+  stem: The number of cars in the city ____ increased.
+  choices:
+  - have
+  - has
+  - are
+  - were
+  answer: has
+  explanation: the number of는 단수 취급, 완료 시제는 has p.p.
   source: synthetic
   review:
     status: pending
 - id: verb.tense.015
   node: verb.tense
-  type: blank
-  stem: By next month, they ____ (finish) the project.
-  answer: will have finished
-  explanation: 미래 시점까지의 완료는 will have + 과거분사
+  type: choice
+  stem: She wishes she ____ more time yesterday.
+  choices:
+  - has
+  - had
+  - had had
+  - would have
+  answer: had had
+  explanation: 과거 사실의 반대 소망은 wish + 과거완료
   source: synthetic
   review:
     status: pending
