@@ -28,7 +28,7 @@ Automated QA validation pipeline for large-scale regulatory data processing.
 > 플래그로 고위험 데이터를 분리해 사람이 우선 검토하도록 설계했습니다.
 > (risk-based triage, human-in-the-loop)
 >
-> **Result**: 수작업 대비 검수 시간 70% 단축, pytest 54개 테스트 100% 통과
+> **Result**: 검수 인력이 8명에서 2차 검수 2명, 최종 1명으로 줄어드는 상황에서 약 2주 안에 전체 행을 처리했습니다(현장 업무 기준이며, 시간 단축률을 따로 측정한 값은 아닙니다). pytest 54개 테스트 통과.
 
 ## diagram 
 

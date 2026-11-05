@@ -1,5 +1,7 @@
 # 설계 원칙 (가설)
 
+> 구현 상태: 아직 없음. 이 문서는 학습자 앱 단계의 요구사항 가설이며, 현재 레포(그래프, 문항, CI)에는 학습자 추적 코드가 없다.
+
 아래는 검증 전 가설이며 근거는 현장 관찰(일화)이다. 모두 [ADR 0005 타깃 학습자](decisions/0005-target-learner.md)에서 파생되었다. 검증되면 ADR로 옮기고 status를 바꾼다.
 
 허용 status: proposed, accepted, superseded.
