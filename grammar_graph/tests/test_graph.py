@@ -50,3 +50,25 @@ def test_tag_edge_must_target_tag_node():
 def test_proto1_scope_is_verb_chain():
     p1 = {n["id"] for n in G["nodes"] if n.get("milestone") == "proto1"}
     assert p1 == {"verb.inflection", "verb.tense", "verb.transitivity"}
+
+
+def _item():
+    return {
+        "id": "x.001", "node": "verb.tense", "type": "blank", "stem": "s",
+        "answer": "a", "source": "self", "review": {"status": "pending"},
+    }
+
+
+def test_template_id_is_optional_and_accepted():
+    it = _item()
+    assert v.schema_errors(it, "item.schema.json") == []
+    it["template_id"] = "tpl.standard-1"
+    assert v.schema_errors(it, "item.schema.json") == []
+
+
+def test_template_id_bad_format_is_rejected():
+    it = _item()
+    it["template_id"] = "Bad ID!"
+    assert v.schema_errors(it, "item.schema.json") != []
+    it["template_id"] = 3
+    assert v.schema_errors(it, "item.schema.json") != []

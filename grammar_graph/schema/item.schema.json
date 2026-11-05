@@ -12,6 +12,7 @@
     "choices": {"type": "array", "items": {"type": "string"}},
     "answer": {"type": "string", "minLength": 1},
     "explanation": {"type": "string"},
+    "template_id": {"type": "string", "pattern": "^[a-z0-9_.-]+$"},
     "source": {"enum": ["self", "synthetic"]},
     "review": {
       "type": "object",
