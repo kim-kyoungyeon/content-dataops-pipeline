@@ -32,6 +32,37 @@ def load_yaml(p: Path):
         return yaml.safe_load(f)
 
 
+def yaml_error_message(p: Path, e: yaml.YAMLError) -> str:
+    """YAML 파싱 오류를 파일:줄과 원인·해결 방법이 보이는 한 줄로 바꾼다."""
+    mark = getattr(e, "problem_mark", None)
+    where = f"{p.name}:{mark.line + 1}" if mark else p.name
+    hint = ""
+    if "mapping values are not allowed" in str(getattr(e, "problem", "")):
+        hint = " (값 안에 ': '가 있으면 값 전체를 따옴표로 감싸세요)"
+    return f"{where}: YAML 문법 오류 - {getattr(e, 'problem', e)}{hint}"
+
+
+EXPLANATION_MAX = 80
+
+
+def style_warnings(p: Path, items: list) -> list[str]:
+    """해설 문체 경고(실패시키지 않음): 비어 있음, 여러 줄, 너무 긺."""
+    out = []
+    for i, it in enumerate(items):
+        ex = it.get("explanation")
+        if ex is None:
+            continue
+        where = f"{p.name}[{i}] {it.get('id', '?')}"
+        text = str(ex).strip()
+        if not text:
+            out.append(f"{where}: 해설이 비어 있음")
+        elif "\n" in text:
+            out.append(f"{where}: 해설은 한 줄로 쓰는 것을 권장")
+        elif len(text) > EXPLANATION_MAX:
+            out.append(f"{where}: 해설이 {len(text)}자 (권장 {EXPLANATION_MAX}자 이내)")
+    return out
+
+
 def schema_errors(data, schema_name: str) -> list[str]:
     schema = json.loads((ROOT / "schema" / schema_name).read_text(encoding="utf-8"))
     v = Draft202012Validator(schema)
@@ -127,15 +158,24 @@ def graph_errors(g: dict) -> list[str]:
     return errs
 
 
+WARNINGS: list[str] = []
+
+
 def item_errors(g: dict) -> tuple[list[str], dict]:
+    WARNINGS.clear()
     node = {n["id"]: n for n in g["nodes"]}
     errs, seen = [], set()
     stats = defaultdict(lambda: {"total": 0, "approved": 0, "pending": 0})
     for p in sorted(ITEMS_DIR.glob("*.yaml")):
-        data = load_yaml(p) or {}
+        try:
+            data = load_yaml(p) or {}
+        except yaml.YAMLError as e:
+            errs.append(yaml_error_message(p, e))
+            continue
         expected_node = p.stem
         if expected_node not in node:
             errs.append(f"{p.name}: file name is not a node id")
+        WARNINGS.extend(style_warnings(p, data.get("items", [])))
         for i, it in enumerate(data.get("items", [])):
             where = f"{p.name}[{i}]"
             errs += [f"{where}: {m}" for m in schema_errors(it, "item.schema.json")]
@@ -201,6 +241,8 @@ def main() -> int:
         if a.check and (not ROADMAP.exists() or ROADMAP.read_text(encoding="utf-8") != md):
             errs.append("docs/roadmap.md is stale: run tools/validate.py --mermaid")
 
+    for w in WARNINGS:
+        print(f"WARN {w}")
     for e in errs:
         print(f"ERROR {e}")
     n_nodes, n_edges = len(g.get("nodes", [])), len(g.get("edges", []))
