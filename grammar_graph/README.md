@@ -20,7 +20,7 @@ docs/roadmap.md           # 자동 생성, 직접 수정 금지 (CI가 최신 �
 
 ## 설계 결정과 가설
 
-결정(accepted)은 [ADR](docs/decisions/)에, 아직 검증하지 않은 가설(proposed)은 [설계 원칙](docs/design-principles.md)에 둔다. 가설은 검증되면 ADR로 옮기고 status를 바꾼다. 형식은 CI(`tools/check_adr.py`)가 검사한다.
+결정(accepted)은 [ADR](docs/decisions/)에, 아직 검증하지 않은 가설(proposed)은 [설계 원칙](docs/design-principles.md)에 둔다. 가설은 `H-NNNN`, 결정은 ADR `NNNN`으로 번호가 따로이고, 가설이 검증되면 새 ADR 번호를 받는다. 형식은 CI(`tools/check_adr.py`)가 검사한다.
 
 | 구분 | 문서 | 한 줄 요약 |
 |---|---|---|
@@ -28,8 +28,9 @@ docs/roadmap.md           # 자동 생성, 직접 수정 금지 (CI가 최신 �
 | 결정(accepted) | [0002](docs/decisions/0002-graph-as-yaml-dag.md) | 선수학습 그래프를 YAML DAG로 관리한다 |
 | 결정(accepted) | [0003](docs/decisions/0003-tense-as-own-node.md) | 시제를 독립 노드로 둔다 |
 | 결정(accepted) | [0004](docs/decisions/0004-content-sources.md) | 문항 출처 규칙(직접 제작, 승인된 synthetic만) |
-| 결정(accepted) | [0005](docs/decisions/0005-target-learner.md) | 대상은 내신·수능 중하위권 학습자 |
-| 가설(proposed) | [0006~0011](docs/design-principles.md) | 진도 숨김, 표현을 바꾼 반복, 짧은 노드와 간격 반복, 오답 시 템플릿 카드, 암기/확장 단계, 집중력 신호 감지 |
+| 대체됨(superseded) | [0005](docs/decisions/0005-target-learner.md) | 대상은 내신·수능 중하위권 학습자 (0006으로 대체) |
+| 결정(accepted) | [0006](docs/decisions/0006-target-learner-expanded.md) | 대상을 내신·수능 학습자 전반으로 확장하고, 설계 기본값은 중하위권에 둔다 |
+| 가설(proposed) | [H-0006~H-0013](docs/design-principles.md) | 챕터 종료 시 진도 공개, 표현을 바꾼 반복, 짧은 노드와 간격 반복 인출(학습자 유형별 분기), 오답 시 템플릿 카드, 암기/확장 단계, 저부하 전환, 이탈 방지/학습 강제 분리, 포인트 가중치와 뱃지 |
 
 문항 검수 절차는 [docs/review-flow.md](docs/review-flow.md)에 있다.
 
