@@ -1,6 +1,7 @@
 # 0005. 타깃 학습자
 
-status: accepted
+status: superseded
+superseded by: 0006-target-learner-expanded.md
 
 ## 배경
 노드 크기, 문항 수, 설명 방식을 정하려면 누구를 위한 설계인지 먼저 정해야 한다.
