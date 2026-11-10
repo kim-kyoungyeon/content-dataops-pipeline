@@ -47,3 +47,11 @@ def test_merge_commits_are_excluded():
         "Merge pull request #24 from kim-kyoungyeon/docs/commit-message",
         "Merge branch 'main' into ci/check-commit-messages",
     ]) == []
+
+
+def test_github_actions_test_merge_title_is_excluded():
+    title = (
+        "Merge f65f6a399ff8ca4aa2684010578ba0ee212f9ee4 "
+        "into bf60ad813378fdd4d668d23dbb2e7310908ef0a6"
+    )
+    assert c.title_errors([title]) == []

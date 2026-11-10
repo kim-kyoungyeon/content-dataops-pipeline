@@ -16,10 +16,14 @@ MAX_LEN = 72
 FORBIDDEN_ASCII = frozenset({"wip", "fix", "update"})
 FORBIDDEN_EXACT = frozenset({"수정"})
 MERGE_PREFIXES = ("Merge pull request", "Merge branch")
+# GitHub Actions pull_request test-merge subject: "Merge <40-hex-sha> into <40-hex-sha>".
+ACTIONS_TEST_MERGE_RE = re.compile(r"^Merge [0-9a-f]{40} into [0-9a-f]{40}$")
 
 
 def is_merge_commit(title: str) -> bool:
-    return title.startswith(MERGE_PREFIXES)
+    if title.startswith(MERGE_PREFIXES):
+        return True
+    return bool(ACTIONS_TEST_MERGE_RE.match(title))
 
 
 def is_forbidden(title: str) -> bool:
