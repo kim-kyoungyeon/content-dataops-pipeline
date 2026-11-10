@@ -13,6 +13,7 @@
 - LLM이 만든 데이터는 승인 전에는 쓰지 않는다.
 
 **CI**: `CI` (QA 모듈: flake8, pytest, Docker 빌드) / `graph-validate` (그래프 모듈: 스키마, 순환, 도달성, 문항 태그, 로드맵 최신 여부) / `commit-message` (커밋 제목 형식)
+**CD**: `main`에서 테스트 통과 후 `ghcr.io/kim-kyoungyeon/content-dataops-pipeline` 이미지를 GHCR에 게시
 
 ---
 
@@ -227,6 +228,12 @@ make docker-run
 
 ## Docker
 
+게시된 이미지는 다음처럼 받을 수 있습니다. (`main`에 머지되고 테스트가 통과한 뒤에 GHCR에 올라갑니다.)
+
+```bash
+docker pull ghcr.io/kim-kyoungyeon/content-dataops-pipeline:latest
+```
+
 ```bash
 # Build
 mkdir -p output
@@ -277,7 +284,8 @@ stats = get_flag_statistics(df)
 | Testing | pytest |
 | Metrics | prometheus-client |
 | Container | Docker |
-| CI/CD | GitHub Actions |
+| CI | GitHub Actions (pytest, flake8, graph-validate) |
+| CD | `main`에서 테스트 통과 후 GHCR에 Docker 이미지 게시 |
 
 ## Roadmap (QA Flag Pipeline)
 
