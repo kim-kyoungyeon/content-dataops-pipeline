@@ -12,7 +12,7 @@
 - 내용이 맞는지는 사람이 검수하고, 검수 기록을 남긴다 (human-in-the-loop).
 - LLM이 만든 데이터는 승인 전에는 쓰지 않는다.
 
-**CI**: `CI` (QA 모듈: flake8, pytest, Docker 빌드) / `graph-validate` (그래프 모듈: 스키마, 순환, 도달성, 문항 태그, 로드맵 최신 여부)
+**CI**: `CI` (QA 모듈: flake8, pytest, Docker 빌드) / `graph-validate` (그래프 모듈: 스키마, 순환, 도달성, 문항 태그, 로드맵 최신 여부) / `commit-message` (커밋 제목 형식)
 
 ---
 
