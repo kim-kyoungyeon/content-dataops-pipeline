@@ -2,6 +2,7 @@ FROM python:3.11-slim
 
 LABEL maintainer="kyeongyeon.kim"
 LABEL description="QA Data Pipeline for regulatory data validation"
+LABEL org.opencontainers.image.source="https://github.com/kim-kyoungyeon/content-dataops-pipeline"
 
 # Set working directory
 WORKDIR /app
