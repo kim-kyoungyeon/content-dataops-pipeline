@@ -15,15 +15,21 @@ TITLE_RE = re.compile(r"^(feat|fix|docs|test|refactor|ci|chore): .+")
 MAX_LEN = 72
 FORBIDDEN_ASCII = frozenset({"wip", "fix", "update"})
 FORBIDDEN_EXACT = frozenset({"수정"})
-MERGE_PREFIXES = ("Merge pull request", "Merge branch")
-# GitHub Actions pull_request test-merge subject: "Merge <40-hex-sha> into <40-hex-sha>".
-ACTIONS_TEST_MERGE_RE = re.compile(r"^Merge [0-9a-f]{40} into [0-9a-f]{40}$")
+# Exempt only the exact subjects that git and GitHub generate, so that a
+# hand-written title starting with "Merge" cannot bypass the format check.
+MERGE_RES = (
+    # GitHub merge button: "Merge pull request #24 from owner/branch"
+    re.compile(r"^Merge pull request #\d+ from \S+$"),
+    # git merge: "Merge branch 'main'", "... of <url>", "... into <branch>"
+    re.compile(r"^Merge branch '[^']+'( of \S+)?( into \S+)?$"),
+    re.compile(r"^Merge remote-tracking branch '[^']+'( into \S+)?$"),
+    # GitHub Actions pull_request test-merge: "Merge <sha> into <sha>"
+    re.compile(r"^Merge [0-9a-f]{40} into [0-9a-f]{40}$"),
+)
 
 
 def is_merge_commit(title: str) -> bool:
-    if title.startswith(MERGE_PREFIXES):
-        return True
-    return bool(ACTIONS_TEST_MERGE_RE.match(title))
+    return any(r.match(title) for r in MERGE_RES)
 
 
 def is_forbidden(title: str) -> bool:

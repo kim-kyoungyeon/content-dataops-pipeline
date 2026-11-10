@@ -46,7 +46,17 @@ def test_merge_commits_are_excluded():
     assert c.title_errors([
         "Merge pull request #24 from kim-kyoungyeon/docs/commit-message",
         "Merge branch 'main' into ci/check-commit-messages",
+        "Merge remote-tracking branch 'origin/main' into docs/x",
     ]) == []
+
+
+def test_hand_written_merge_like_titles_are_not_exempt():
+    for title in (
+        "Merge branch lol whatever",
+        "Merge pull request anything here",
+        "Merge stuff",
+    ):
+        assert c.title_errors([title]), f"{title!r} should not bypass the check"
 
 
 def test_github_actions_test_merge_title_is_excluded():
