@@ -10,17 +10,21 @@ help:
 	@echo "  make format      - Format code with black"
 	@echo "  make clean       - Clean build artifacts"
 	@echo ""
+	@echo "  make run         - Run pipeline on bundled sample (override with INPUT=...)"
 	@echo "  make docker-build - Build Docker image"
-	@echo "  make docker-run   - Run with Docker"
+	@echo "  make docker-run   - Run with Docker Compose"
 	@echo "  make monitoring   - Start monitoring stack"
 	@echo ""
-	@echo "  make flag INPUT=<file>     - Generate flags"
-	@echo "  make autofill INPUT=<file> - Auto-fill from AI"
-	@echo ""
+
+INPUT ?= sample_data/sample_input.xlsx
+OUTPUT_DIR ?= output
 
 # Development
 install:
 	pip install -r requirements.txt
+
+run:
+	python main.py $(INPUT) --output-dir $(OUTPUT_DIR)
 
 test:
 	pytest tests/ -v --cov=src --cov-report=term-missing
@@ -50,13 +54,3 @@ monitoring:
 
 monitoring-down:
 	docker-compose --profile monitoring down
-
-# Pipeline commands
-flag:
-	python main.py flag $(INPUT) -o data/output/flagged.xlsx
-
-autofill:
-	python main.py autofill $(INPUT) -o data/output/autofilled.xlsx
-
-merge:
-	python main.py merge $(ORIGINAL) $(FLAGGED) -o data/output/merged.xlsx

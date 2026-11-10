@@ -2,9 +2,9 @@
 """QA Data Pipeline CLI.
 
 Usage:
-    python main.py input.xlsx --output-dir ./output
-    python main.py input.xlsx --range 4-1 5-2
-    python main.py input.xlsx --no-autofill
+    python main.py sample_data/sample_input.xlsx --output-dir ./output
+    python main.py sample_data/sample_input.xlsx --range 1-1 1-3
+    python main.py sample_data/sample_input.xlsx --no-autofill
 """
 
 import argparse
@@ -25,10 +25,10 @@ def parse_args():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  %(prog)s data/input.xlsx
-  %(prog)s data/input.xlsx --output-dir ./results
-  %(prog)s data/input.xlsx --range 4-1 5-2
-  %(prog)s data/input.xlsx --no-autofill --json
+  %(prog)s sample_data/sample_input.xlsx
+  %(prog)s sample_data/sample_input.xlsx --output-dir ./results
+  %(prog)s sample_data/sample_input.xlsx --range 1-1 1-3
+  %(prog)s sample_data/sample_input.xlsx --no-autofill --json
         """
     )
     

@@ -7,13 +7,12 @@ services:
       dockerfile: Dockerfile
     container_name: content-dataops-pipeline
     volumes:
-      - ./data/input:/app/data/input
-      - ./data/output:/app/data/output
-      - ./sample_data:/app/sample_data
+      - ./sample_data:/app/sample_data:ro
+      - ./output:/app/output
     environment:
       - PYTHONUNBUFFERED=1
-    # Override command for different operations
-    # command: ["flag", "data/input/input.xlsx", "-o", "data/output/flagged.xlsx"]
+    # Current CLI: python main.py <input.xlsx> [--output-dir DIR]
+    command: ["sample_data/sample_input.xlsx", "--output-dir", "/app/output"]
 
   # Prometheus for metrics collection (optional)
   prometheus:
