@@ -95,8 +95,8 @@ graph LR
 - **Label Standardization**: Normalize D column variations
 - **Auto-fill**: Fill empty E columns from AI-extracted data (H column)
 - **Pipeline Orchestration**: Run all stages in order with progress tracking
-- **Metrics**: Prometheus-client 기반 실행 지표 계측 (runs/rows/flags/duration)
-- **Logging**: Structured JSON logging
+- **Metrics (미연결)**: `src/metrics.py`에 prometheus-client 계측 모듈(runs/rows/flags/duration)이 있지만, 아직 파이프라인 실행 경로에 연결되지 않아 실행해도 지표가 기록되지 않습니다. 자세한 상태는 [Metrics](#metrics) 참조.
+- **Logging**: 콘솔 로그(사람이 읽는 형식). JSON 포매터는 `src/logging_utils.py`에 있지만 CLI에서 켜는 옵션은 아직 없습니다.
 
 ## Installation
 
@@ -173,7 +173,7 @@ content-dataops-pipeline/
 │   ├── data_merger.py      # Merge/diff utilities
 │   ├── pipeline.py         # Orchestrator
 │   ├── logging_utils.py    # Structured logging
-│   └── metrics.py          # Prometheus metrics
+│   └── metrics.py          # Prometheus metrics (파이프라인 미연결)
 ├── config/
 │   └── config.yaml         # Configuration
 ├── tests/
@@ -249,12 +249,18 @@ docker run --rm \
 
 ## Metrics
 
-When `prometheus-client` is installed, metrics are available:
+> **현재 상태: 미연결.** 아래 지표는 `src/metrics.py`에 정의만 되어 있고, `src/pipeline.py`와 `main.py`가 이 모듈을 호출하지 않아 실행 시 기록되지 않습니다. `/metrics` HTTP 엔드포인트를 여는 코드도 없습니다.
+
+`src/metrics.py`에 정의된 지표:
 
 - `qa_pipeline_runs_total{status}` - Total pipeline runs
 - `qa_pipeline_rows_total` - Rows processed
 - `qa_pipeline_flags_total{flag_type}` - Flags generated
 - `qa_pipeline_stage_seconds{stage}` - Stage duration
+
+`docker-compose.yml`의 `monitoring` 프로필(`make monitoring`)은 Prometheus와 Grafana 컨테이너를 띄우지만, `monitoring/prometheus.yml`이 수집하려는 `qa-pipeline:8000/metrics`는 현재 존재하지 않습니다. Grafana 대시보드나 데이터 소스 설정도 레포에 없습니다.
+
+이 파이프라인은 한 번 실행하고 끝나는 배치 작업이라 15초 간격 scrape 방식과 맞지 않습니다. 연결은 실행이 끝날 때 지표를 Pushgateway로 보내거나 node_exporter textfile로 쓰는 방식으로 할 계획입니다(이후 작업).
 
 ## API Usage
 
@@ -282,7 +288,7 @@ stats = get_flag_statistics(df)
 | Data | pandas, openpyxl |
 | Config | PyYAML |
 | Testing | pytest |
-| Metrics | prometheus-client |
+| Metrics | prometheus-client (모듈만 있음, 파이프라인 미연결) |
 | Container | Docker |
 | CI | GitHub Actions (pytest, flake8, graph-validate) |
 | CD | `main`에서 테스트 통과 후 GHCR에 Docker 이미지 게시 |
