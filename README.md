@@ -4,7 +4,7 @@
 
 | 모듈 | 데이터 | 하는 일 | 상태 |
 |---|---|---|---|
-| [QA Flag Pipeline](#qa-flag-pipeline) (`src/`, `main.py`) | 남이 만든 대량 데이터 (조례 11,000+ rows) | 신뢰도 점수 기반 플래그로 고위험 행을 골라 사람이 먼저 검수 | 동작 중, pytest 54개 |
+| [QA Flag Pipeline](#qa-flag-pipeline) (`src/`, `main.py`) | 남이 만든 대량 데이터 (조례 11,000+ rows) | 신뢰도 점수 기반 플래그로 고위험 행을 골라 사람이 먼저 검수 | 동작 중, pytest 70개 |
 | [Grammar Graph](grammar_graph/README.md) (`grammar_graph/`) | 직접 만든 영어 학습 콘텐츠 | 문법 선수학습 그래프(YAML DAG)와 문항을 CI로 검증하고 로드맵 자동 생성 | 프로토타입 1 (그래프, 검증기, CI 완료 / 동사 체인 문항 51개 검수 완료) |
 
 **공통 원칙**
@@ -119,6 +119,8 @@ python main.py sample_data/sample_input.xlsx --output-dir ./results --range 1-1 
 python main.py sample_data/sample_input.xlsx --no-autofill --json
 ```
 
+번들 샘플(`sample_data/sample_input.xlsx`)은 `tools/make_sample.py`로 만든 가상 데이터입니다. 기본 실행은 20행 중 13행, `--range 1-1 1-3`은 12행 중 6행을 플래그합니다. 등급 규칙과 행 구성은 [sample_data/README.md](sample_data/README.md) 참조.
+
 ## CLI Options
 
 | Option | Description |
@@ -179,8 +181,12 @@ content-dataops-pipeline/
 ├── tests/
 │   ├── test_flag_generator.py
 │   ├── test_standardize.py
-│   └── test_pipeline.py
+│   ├── test_pipeline.py
+│   └── test_sample_data.py
+├── tools/
+│   └── make_sample.py      # 가상 샘플 생성 (고정 시드)
 ├── sample_data/
+│   ├── README.md           # 가상 데이터·등급 규칙 설명
 │   └── sample_input.xlsx
 ├── main.py                 # CLI entry point
 ├── Dockerfile
